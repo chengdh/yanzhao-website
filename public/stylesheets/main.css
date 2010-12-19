@@ -1,0 +1,200 @@
+/*--------------------------reset--------------------------------------------*/
+ul {list-style : none;}
+.box {background : transparent;}
+/*滚动图片*/
+#slideshow {
+  width : 630px;
+  height : 310px;
+}
+.slidebar {
+  background: url(../images/slideView_bar.gif) repeat-x;
+}
+#slideshow .desc {width : 100%;}
+
+#slideshow img {
+
+  width : 630px;
+  height : 310px;
+}
+
+
+/*--------------------------layout-------------------------------------------*/
+/*文字对齐*/
+.text-center {text-align : center;}
+.text-right {text-align : right;}
+/*with-border*/
+.with-border{ border : 2px solid #C2CFF1; }
+/*with top border*/
+.with-top-border {border-top : 2px solid #C2CFF1;}
+.with-right-border{border-right : 2px solid #C2CFF1;}
+.with-bottom-border {border-bottom : 2px solid #C2CFF1;}
+
+body {background : #1C5E9B;}
+#container {background : #fff;}
+
+/*logo*/
+#logo {
+  height : 60px;
+  background : url(../images/logo.png) no-repeat left top;
+}
+#touch-phone { 
+  padding-left : 70px;
+  height : 70px;
+  font-size : 1.6em;
+  line-height : 70px;
+  font-weight : bold;
+  color : #c36623;
+  vertical-align : bottom;
+  background : url(../images/phone.png) no-repeat left top;
+
+}
+/*标题头样式*/
+.group-title {
+  padding : 4px;
+  background : #C2CFF1;
+}
+.group-title a{
+  float : right;
+}
+
+/*查询运单form*/
+#search_bills_form {height : 100px;padding : 4px;}
+
+#search_bills_form textarea { width : 95%;margin-bottom : 10px; }
+
+/*营业网点*/
+#org-list {
+  height : 145px;
+  padding : 4px;
+}
+/*超过给定长度显示省略号*/
+#org-list li{
+  padding-bottom : 5px;
+  text-overflow : ellipsis;
+  white-space : nowrap;
+  overflow : hidden;
+}
+
+/*导航菜单样式*/
+ul.topnav {
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+  float: left;
+  font-size: 1em;
+}
+ul.topnav li {
+  float: left;
+  margin: 0;
+  width : 90px;
+  padding: 0 20px 0 0;
+  position: relative; /*--Declare X and Y axis base for sub navigation--*/
+}
+ul.topnav li a{
+  padding: 10px 5px;
+  display: block;
+  text-decoration: none;
+  float: left;
+}
+ul.topnav li a:hover {
+  //background: url(../images/topnav_hover.gif) no-repeat center top;
+}
+ul.topnav li span { /*--Drop down trigger styles--*/
+  width: 17px;
+  height: 35px;
+  float: left;
+  background: url(../images/subnav_btn.gif) no-repeat center top;
+}
+//ul.topnav li span.subhover {background-position: center bottom; cursor: pointer;} /*--Hover effect for trigger--*/
+ul.topnav li ul.subnav {
+  list-style: none;
+  position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+  left: 0; top: 35px;
+  margin: 0; padding: 0;
+  background : #D1DEEE;
+  display: none;
+  float: left;
+  width: 170px;
+  border: 1px solid #C2CFF1;
+  z-index : 1001;
+}
+ul.topnav li ul.subnav li{
+  margin: 0; padding: 0;
+  border-top: 1px solid #D1DEEE; /*--CSSreate bevel effect--*/
+  border-bottom: 1px solid #C2CFF1; /*--Create bevel effect--*/
+  clear: both;
+  width: 170px;
+}
+html ul.topnav li ul.subnav     li a {
+  float: left;
+  width: 145px;
+  padding-left: 20px;
+}
+html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+  background: #D1DEEE;
+}
+#news_list ,#industry_news,#employ_news{
+  list-style : url(../images/ul-arrow.jpg);
+
+}
+/*新闻公告/行业动态/招聘信息列表样式*/
+#news_list li,#industry_news li,#employ_news li{
+  padding-bottom : 5px;
+  text-overflow : ellipsis;
+  white-space : nowrap;
+  overflow : hidden;
+
+
+}
+/*底部footer*/
+#footer_link li {
+  list-style : none;
+  float : left;
+  margin-right : 10px;
+}
+#footer_link a
+{color : #fff;}
+#copyright {padding-right : 10px;}
+footer {
+  padding-top : 10px;
+  color : #FFF;
+  //background : #C7C7C7;
+}
+footer a { color : #fff;}
+
+/*--------------------------type-------------------------------------------*/
+
+/*--------------------------color-------------------------------------------*/
+#nav-wrap {background: #D1DEEE;}
+
+/*---------------------------submenu----------------------------------------------*/
+/*当前位置*/
+#navigator_bar {padding : 4px;}
+#sidebar {
+  padding : 10px;
+  position : relative;
+  font-size : 1.2em;
+  background : #1C5E9B;
+  border : 4px solid #fff;
+}
+#sidebar li{
+  margin-top : 10px;
+  border-bottom : 1px solid #fff;
+}
+#sidebar li a {
+  color : #fff;
+  text-decoration : none;
+}
+/*二级页面title*/
+.sub_title {
+  font-size : 1.3em;
+  font-weight : bold;
+  padding : 4px;
+  border-bottom : 2px solid gray;
+}
+/*二级页面内容*/
+#sub_content li{
+  padding-top : 5px;
+  padding-bottom : 10px;
+  border-bottom : 1px dotted gray;
+}

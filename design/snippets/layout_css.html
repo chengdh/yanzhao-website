@@ -10,6 +10,11 @@
 .with-tborder {border-top : 2px solid @border_color;}
 .with-rborder{border-right : 2px solid @border_color;}
 .with-bborder {border-bottom : 2px solid @border_color;}
+//table 列表
+.table-list{
+  width : 100%;
+  tr {border-bottom : 1px dotted gray;}
+  }
 
 /*logo*/
 #logo {
@@ -100,6 +105,13 @@ ul.topnav {
     }
   }
 }
+//底部显示新闻公告,营业网点
+#bottom_list{
+  ul li {
+  margin-top : 5px;
+  padding : 1px;
+  }
+}
 /*底部footer*/
 footer{padding-top : 10px;}
 #footer_link li {
@@ -107,4 +119,29 @@ footer{padding-top : 10px;}
   float : left;
   margin-right : 10px;
 }
-/*超过给定长度显示省略号*/
+
+/*-----------二级页面中的样式--------------------*/
+//导航条
+#breadcrumb_bar {padding : 5px;}
+//侧边栏
+#sidebar{
+  padding : 10px;
+  position : relative;
+  .with-2border;
+  li{
+  .with-bborder;
+  list-style : none;
+  margin-top : 10px;
+  }
+}
+/*二级页面title*/
+.subtitle {
+  padding : 4px;
+  .with-bborder;
+ }
+ /*二级页面内容*/
+ #sub_content li{
+ padding-top : 5px;
+ padding-bottom : 10px;
+ .with-bborder;
+} 

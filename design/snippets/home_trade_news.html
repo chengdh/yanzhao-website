@@ -1,0 +1,15 @@
+<h3 class='group-title'>
+  行业动态
+  <r:find url="/news_center/trade_news">
+  <r:link>更多</r:link>
+  </r:find>
+</h3>
+
+<r:find url="/news_center/trade_news">
+<ul>
+  <r:children:each order="desc" limit="4">
+  <li class='text-ellipsis'>[<r:date format="%Y-%m-%d %H:%M" />]<r:link /> </li>
+  </r:children:each>
+</ul>
+<r:unless_children><p>暂无信息显示</p></r:unless_children>
+</r:find>

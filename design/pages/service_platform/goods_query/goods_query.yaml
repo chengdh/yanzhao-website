@@ -1,7 +1,7 @@
 --- 
 class_name: ""
 slug: goods_query
-updated_by_id: 
+updated_by_id: 1
 layout_name: <inherit> [default]
 title: !binary |
   6LSn54mp5p+l6K+i
@@ -12,6 +12,6 @@ breadcrumb: !binary |
   6LSn54mp5p+l6K+i
 
 description: ""
-published_at: 
-status_id: 1
+published_at: 2010-12-20 22:53:02 Z
+status_id: 100
 keywords: ""

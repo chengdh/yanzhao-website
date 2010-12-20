@@ -1,0 +1,28 @@
+<h2 id='breadcrumb_bar' class='with-bborder'>
+  当前位置:首页 > 新闻中心
+</h2>
+<div  class='span-24 prepend-top'>
+  <div class='span-5'>
+    <r:snippet name="sidebar_news_center"/>
+    <r:snippet name="fixed_sidebar" />
+  </div>
+  <!--2级页面主体-->
+  <div class='span-19 last'>
+    <div class='sub_title_img'><img src='images/sub_title_bg.jpg' /></div>
+    <h2 class='subtitle'><r:title /></h2>
+    <div class='box' id='sub_content'>
+      <r:find url="/news_center/company_news">
+      <table class='table-list'>
+        <r:children:each order="desc" limit="20">
+        <tr>
+          <td><r:link /></td>
+          <td width='100'><r:date format="%Y-%m-%d %H:%M" /></td>
+        </tr>
+        </r:children:each>
+
+      </table>
+      <r:unless_children><p>暂无信息显示</p></r:unless_children>
+      </r:find>
+    </div>
+  </div>
+</div>

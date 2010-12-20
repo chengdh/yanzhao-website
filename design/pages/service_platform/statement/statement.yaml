@@ -1,7 +1,7 @@
 --- 
 class_name: ""
 slug: statement
-updated_by_id: 
+updated_by_id: 1
 layout_name: <inherit> [default]
 title: !binary |
   5a6i5oi36aG755+l
@@ -12,6 +12,6 @@ breadcrumb: !binary |
   5a6i5oi36aG755+l
 
 description: ""
-published_at: 
-status_id: 1
+published_at: 2010-12-20 22:53:31 Z
+status_id: 100
 keywords: ""

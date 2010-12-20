@@ -2,9 +2,7 @@
 class_name: ""
 slug: walk_into_yanzhao
 updated_by_id: 
-layout_name: !binary |
-  PGluaGVyaXQ+IFvpu5jorqTluIPlsYBd
-
+layout_name: <inherit> [default]
 title: !binary |
   6LWw6L+b54eV6LW1
 

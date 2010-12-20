@@ -2,9 +2,7 @@
 class_name: ""
 slug: company_news
 updated_by_id: 
-layout_name: !binary |
-  PGluaGVyaXQ+IFvpu5jorqTluIPlsYBd
-
+layout_name: <inherit> [default]
 title: !binary |
   5YWs5Y+45paw6Ze7
 

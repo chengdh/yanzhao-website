@@ -2,9 +2,7 @@
 class_name: ""
 slug: enterrise_sign
 updated_by_id: 
-layout_name: !binary |
-  PGluaGVyaXQ+IFvpu5jorqTluIPlsYBd
-
+layout_name: <inherit> [default]
 title: !binary |
   5LyB5Lia6LWE6LSo
 

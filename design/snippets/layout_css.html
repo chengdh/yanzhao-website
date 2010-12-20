@@ -1,0 +1,110 @@
+/* vim: set filetype=less : */
+/**************通用布局设置****************/
+/*文字对齐*/
+.text-center {text-align : center;}
+.text-right {text-align : right;}
+/*with-border*/
+@border_color : #C2CFF1;
+.with-2border{ border : 2px solid @border_color; }
+/*with top border*/
+.with-tborder {border-top : 2px solid @border_color;}
+.with-rborder{border-right : 2px solid @border_color;}
+.with-bborder {border-bottom : 2px solid @border_color;}
+
+/*logo*/
+#logo {
+  height : 60px;
+  background : url(images/logo.png) no-repeat left top;
+}
+#touch-phone { 
+  padding-left : 70px;
+  height : 70px;
+  font-size : 1.6em;
+  line-height : 70px;
+  font-weight : bold;
+  vertical-align : bottom;
+  background : url(images/phone.png) no-repeat left top;
+}
+/*标题头样式*/
+.group-title {
+  padding : 4px;
+  a { float: right;}
+}
+/*查询运单form*/
+#search_bills_form {
+  height : 100px;
+  padding : 4px;
+  textarea { 
+    width : 95%;
+    margin-bottom : 10px; 
+}
+}
+
+/*营业网点*/
+#org-list {
+  height : 145px;
+  padding : 4px;
+  li{
+    padding-bottom : 5px;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+    overflow : hidden;
+  }
+}
+
+/*导航菜单样式*/
+ul.topnav {
+  padding: 0 20px;
+  float: left;
+  li {
+    list-style: none;
+    float: left;
+    margin: 0;
+    width : 90px;
+    padding: 0 20px 0 0;
+    position: relative; /*--Declare X and Y axis base for sub navigation--*/
+    a{
+      padding: 10px 5px;
+      display: block;
+      text-decoration: none;
+      float: left;
+    }
+    span { /*--Drop down trigger styles--*/
+      width: 17px;
+      height: 35px;
+      float: left;
+      background: url(images/subnav_btn.gif) no-repeat center top;
+    }
+    ul.subnav {
+      list-style: none;
+      position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+      left: 0; top: 35px;
+      margin: 0; padding: 0;
+      display: none;
+      float: left;
+      width: 170px;
+      border: 1px solid #C2CFF1;
+      z-index : 1001;
+      li{
+        margin: 0; padding: 0;
+        border-top: 1px solid #D1DEEE; /*--CSSreate bevel effect--*/
+        border-bottom: 1px solid #C2CFF1; /*--Create bevel effect--*/
+        clear: both;
+        width: 170px;
+        a{
+          float: left;
+          width: 145px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+/*底部footer*/
+footer{padding-top : 10px;}
+#footer_link li {
+  list-style : none;
+  float : left;
+  margin-right : 10px;
+}
+/*超过给定长度显示省略号*/

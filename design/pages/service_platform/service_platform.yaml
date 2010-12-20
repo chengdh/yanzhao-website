@@ -2,9 +2,7 @@
 class_name: ""
 slug: service_platform
 updated_by_id: 
-layout_name: !binary |
-  PGluaGVyaXQ+IFvpu5jorqTluIPlsYBd
-
+layout_name: <inherit> [default]
 title: !binary |
   5pyN5Yqh5bmz5Y+w
 

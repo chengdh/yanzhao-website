@@ -1,10 +1,8 @@
 --- 
 class_name: ""
 slug: /
-updated_by_id: 1
-layout_name: !binary |
-  6buY6K6k5biD5bGA
-
+updated_by_id: 
+layout_name: default
 title: !binary |
   6aaW6aG1
 
@@ -14,6 +12,6 @@ breadcrumb: !binary |
   6aaW6aG1
 
 description: ""
-published_at: 2010-12-18 17:22:18 Z
+published_at: 2010-12-20 08:14:20 Z
 status_id: 100
 keywords: ""

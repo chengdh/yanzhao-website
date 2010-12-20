@@ -2,9 +2,7 @@
 class_name: ""
 slug: enterprise_spirit
 updated_by_id: 
-layout_name: !binary |
-  PGluaGVyaXQ+IFvpu5jorqTluIPlsYBd
-
+layout_name: <inherit> [default]
 title: !binary |
   5LyB5Lia55CG5b+1
 

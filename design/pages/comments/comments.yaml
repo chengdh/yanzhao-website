@@ -2,9 +2,7 @@
 class_name: ""
 slug: comments
 updated_by_id: 
-layout_name: !binary |
-  PGluaGVyaXQ+IFvpu5jorqTluIPlsYBd
-
+layout_name: <inherit> [default]
 title: !binary |
   5Zyo57q/55WZ6KiA
 

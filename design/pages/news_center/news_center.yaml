@@ -2,7 +2,7 @@
 class_name: ""
 slug: news_center
 updated_by_id: 
-layout_name: <inherit> [default]
+layout_name: [defaul_2level_page]
 title: !binary |
   5paw6Ze75Lit5b+D
 

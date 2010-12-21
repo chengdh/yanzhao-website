@@ -1,0 +1,3 @@
+[submodule "vendor/extensions/bespin_editor"]
+	path = vendor/extensions/bespin_editor
+	url = git://github.com/jlong/radiant-bespin-editor-extension.git

@@ -1,5 +1,5 @@
 --- 
-class_name: ""
+class_name: 
 slug: invertise_news
 updated_by_id: 
 layout_name: <inherit> [default]
@@ -11,7 +11,7 @@ created_by_id: 1
 breadcrumb: !binary |
   5oub6IGY5L+h5oGv
 
-description: ""
+description: 
 published_at: 
 status_id: 1
-keywords: ""
+keywords: 

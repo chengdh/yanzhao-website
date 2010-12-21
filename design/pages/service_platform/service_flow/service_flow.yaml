@@ -1,7 +1,7 @@
 --- 
-class_name: ""
+class_name: 
 slug: service_flow
-updated_by_id: 1
+updated_by_id: 
 layout_name: <inherit> [default]
 title: !binary |
   5Y+R6LSn5rWB56iL
@@ -11,7 +11,7 @@ created_by_id: 1
 breadcrumb: !binary |
   5Y+R6LSn5rWB56iL
 
-description: ""
+description: 
 published_at: 2010-12-20 22:53:15 Z
 status_id: 100
-keywords: ""
+keywords: 

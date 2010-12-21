@@ -1,33 +1,3 @@
-<!doctype html>  
-<!--二级及三级页面layout-->
-<r:snippet name='layout_head' />
-<body>
-  <r:snippet name="header_footer">
-  <h2 id='breadcrumb_bar' class='with-bborder'>
-    <r:if_content part="breadcrumb_bar" >
-    <r:content part="breadcrumb_bar" />
-    </r:if_content>
-    <r:unless_content part="breadcrumb_bar">
-    <r:content part="breadcrumb_bar" inherit="true" />
-    </r:unless_content>
-  </h2>
-  <div  class='span-24 prepend-top'>
-    <div class='span-5' id="sidebar">
-      <r:if_content part="sidebar" >
-      <r:content part="sidebar"/>
-      </r:if_content>
-      <r:unless_content part="sidebar">
-      <r:content part="sidebar" inherit="true" />
-      </r:unless_content>
-    </div>
-    <!--2级页面主体-->
-    <div class='span-19 last'>
-      <div class='box'>
-        <r:content />
-      </div>
-    </div>
-  </div>
-  </r:snippet>
-  <r:snippet name="layout_js" />
-</body>
-</html>
+<r:snippet name="sub_layout">
+<r:content />
+</r:snippet>

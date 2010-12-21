@@ -1,7 +1,7 @@
 --- 
-class_name: ""
+class_name: 
 slug: enterprise_spirit
-updated_by_id: 1
+updated_by_id: 
 layout_name: <inherit> [default]
 title: !binary |
   5LyB5Lia55CG5b+1
@@ -11,7 +11,7 @@ created_by_id: 1
 breadcrumb: !binary |
   5LyB5Lia55CG5b+1
 
-description: ""
+description: 
 published_at: 2010-12-20 22:53:57 Z
 status_id: 100
-keywords: ""
+keywords: 

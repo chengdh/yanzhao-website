@@ -1,0 +1,39 @@
+<!doctype html>  
+<!--二级及三级页面layout-->
+<r:snippet name='layout_head' />
+<body>
+  <r:snippet name="header_footer">
+  <h2 id='breadcrumb_bar' class='with-bborder'>
+    <r:if_content part="breadcrumb_bar" >
+    <r:content part="breadcrumb_bar" />
+    </r:if_content>
+    <r:unless_content part="breadcrumb_bar">
+    <r:content part="breadcrumb_bar" inherit="true" />
+    </r:unless_content>
+  </h2>
+  <div  class='span-24 prepend-top'>
+    <div class='span-5' id="sidebar">
+      <r:if_content part="sidebar" >
+      <r:content part="sidebar"/>
+      </r:if_content>
+      <r:unless_content part="sidebar">
+      <r:content part="sidebar" inherit="true" />
+      </r:unless_content>
+    </div>
+    <!--2级页面主体-->
+    <div class='span-19 last'>
+      <div class='box'>
+        <!--判断是否显示时间,title是否剧中-->
+        <div class='sub_title_img'><img src='/images/sub_title_bg.jpg' /></div>
+        <h2 class='subtitle <r:if cond=" vars[title_align] exists?"><r:puts value_for="vars[title_align]" /></r:if>'><r:title /></h2>
+        <r:if cond="vars[show_date] exists?">
+        <p class='text-center'> <r:date format="%Y-%m-%d %H:%M" /></p>
+        </r:if>
+        <r:yield />
+      </div>
+    </div>
+  </div>
+  </r:snippet>
+  <r:snippet name="layout_js" />
+</body>
+</html>

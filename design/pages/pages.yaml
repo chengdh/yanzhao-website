@@ -1,5 +1,5 @@
 --- 
-class_name: ""
+class_name: 
 slug: /
 updated_by_id: 
 layout_name: default
@@ -11,7 +11,7 @@ created_by_id: 1
 breadcrumb: !binary |
   6aaW6aG1
 
-description: ""
+description: 
 published_at: 2010-12-20 08:14:20 Z
 status_id: 100
-keywords: ""
+keywords: 

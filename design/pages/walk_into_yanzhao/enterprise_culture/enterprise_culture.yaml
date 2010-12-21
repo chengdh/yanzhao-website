@@ -1,7 +1,7 @@
 --- 
-class_name: ""
+class_name: 
 slug: enterprise_culture
-updated_by_id: 1
+updated_by_id: 
 layout_name: <inherit> [default]
 title: !binary |
   5LyB5Lia5paH5YyW
@@ -11,7 +11,7 @@ created_by_id: 1
 breadcrumb: !binary |
   5LyB5Lia5paH5YyW
 
-description: ""
+description: 
 published_at: 2010-12-20 22:54:21 Z
 status_id: 100
-keywords: ""
+keywords: 

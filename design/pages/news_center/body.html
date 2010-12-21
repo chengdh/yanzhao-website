@@ -1,8 +1,14 @@
 <h2 id='breadcrumb_bar' class='with-bborder'>
-  当前位置:首页 > 新闻中心
+  当前位置:
+  <r:navigation urls="首页: / | 新闻中心: /news_center">
+  <r:normal><a href="<r:url />"><r:title /></a></r:normal>
+  <r:here><strong><r:title /></strong></r:here>
+  <r:selected><strong><a href="<r:url />"><r:title /></a></strong></r:selected>
+  <r:between> > </r:between>
+  </r:navigation>
 </h2>
 <div  class='span-24 prepend-top'>
-  <div class='span-5'>
+  <div class='span-5' id="sidebar">
     <r:snippet name="sidebar_news_center"/>
     <r:snippet name="fixed_sidebar" />
   </div>
@@ -16,7 +22,7 @@
         <r:children:each order="desc" limit="20">
         <tr>
           <td><r:link /></td>
-          <td width='100'><r:date format="%Y-%m-%d %H:%M" /></td>
+          <td width='150'><r:date format="%Y-%m-%d %H:%M" /></td>
         </tr>
         </r:children:each>
 

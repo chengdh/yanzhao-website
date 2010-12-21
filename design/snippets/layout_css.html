@@ -13,7 +13,8 @@
 //table 列表
 .table-list{
   width : 100%;
-  tr {border-bottom : 1px dotted gray;}
+  tr{border-bottom : 1px dotted gray;}
+  td{padding : 5px;}
   }
 
 /*logo*/
@@ -125,13 +126,16 @@ footer{padding-top : 10px;}
 #breadcrumb_bar {padding : 5px;}
 //侧边栏
 #sidebar{
-  padding : 10px;
-  position : relative;
-  .with-2border;
-  li{
-  .with-bborder;
-  list-style : none;
-  margin-top : 10px;
+    ul{
+    padding : 5px;
+    margin : 5px;
+    .with-2border;
+    list-style : none;
+    li{
+    .with-bborder;
+    margin-top : 10px;
+    padding: 5px;
+    }
   }
 }
 /*二级页面title*/
@@ -139,9 +143,3 @@ footer{padding-top : 10px;}
   padding : 4px;
   .with-bborder;
  }
- /*二级页面内容*/
- #sub_content li{
- padding-top : 5px;
- padding-bottom : 10px;
- .with-bborder;
-} 

@@ -2,7 +2,7 @@
 class_name: 
 slug: statement
 updated_by_id: 
-layout_name: detail_layout_no_date
+layout_name:  <inherit> [default_no_date]
 title: !binary |
   5a6i5oi36aG755+l
 
@@ -11,6 +11,8 @@ created_by_id: 1
 breadcrumb: !binary |
   5a6i5oi36aG755+l
 
+enable_comments: false
+comments_count: 0
 description: 
 published_at: 2010-12-20 22:53:31 Z
 status_id: 100

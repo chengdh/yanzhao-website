@@ -2,7 +2,7 @@
 class_name: ""
 slug: trade_news
 updated_by_id: 
-layout_name: <inherit> [default_2level_page]
+layout_name: <inherit> [default_no_date]
 title: !binary |
   6KGM5Lia5Yqo5oCB
 
@@ -11,6 +11,8 @@ created_by_id: 1
 breadcrumb: !binary |
   6KGM5Lia5Yqo5oCB
 
+enable_comments: false
+comments_count: 0
 description: ""
 published_at: 2010-12-20 21:03:44 Z
 status_id: 100

@@ -2,7 +2,7 @@
 class_name: ""
 slug: company_news
 updated_by_id: 
-layout_name: <inherit> [default_2level_page]
+layout_name: <inherit> [default_no_date]
 title: !binary |
   5YWs5Y+45paw6Ze7
 
@@ -11,6 +11,8 @@ created_by_id: 1
 breadcrumb: !binary |
   5YWs5Y+45paw6Ze7
 
+enable_comments: false
+comments_count: 0
 description: ""
 published_at: 2010-12-20 13:03:20 Z
 status_id: 100

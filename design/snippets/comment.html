@@ -1,0 +1,13 @@
+<r:comments:field>
+<div class="comment" id="comment-<r:id/>">
+  <h3 class="author">
+      <r:author/>说:
+  </h3>
+  <div class="content_html"><r:content_html /></div>
+  <p class='text-right'><r:date format="%Y-%m-%d %H:%M" /></p>
+  <r:if_selected><p><em>
+      <r:if_approved>感谢您的留言!</r:if_approved>
+      <r:unless_approved>多谢您的留言,对于意见和建议我们会及时的进行处理并反馈信息给您.</r:unless_approved>
+  </em></p></r:if_selected>
+</div>
+</r:comments:field>

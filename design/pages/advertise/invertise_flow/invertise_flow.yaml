@@ -11,6 +11,8 @@ created_by_id: 1
 breadcrumb: !binary |
   5bqU6IGY5rWB56iL
 
+enable_comments: false
+comments_count: 0
 description: 
 published_at: 
 status_id: 1

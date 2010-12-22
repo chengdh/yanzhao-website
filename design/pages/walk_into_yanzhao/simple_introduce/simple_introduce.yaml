@@ -1,8 +1,8 @@
 --- 
-class_name: 
+class_name: ""
 slug: simple_introduce
 updated_by_id: 
-layout_name: detail_layout_no_date
+layout_name: <inherit> [default_no_date]
 title: !binary |
   5LyB5Lia566A5LuL
 
@@ -11,7 +11,9 @@ created_by_id: 1
 breadcrumb: !binary |
   5LyB5Lia566A5LuL
 
-description: 
+enable_comments: false
+comments_count: 0
+description: ""
 published_at: 2010-12-20 22:53:50 Z
 status_id: 100
-keywords: 
+keywords: ""

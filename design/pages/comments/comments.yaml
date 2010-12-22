@@ -1,8 +1,8 @@
 --- 
-class_name: 
+class_name: ""
 slug: comments
 updated_by_id: 
-layout_name: <inherit> [default]
+layout_name: default
 title: !binary |
   5Zyo57q/55WZ6KiA
 
@@ -11,7 +11,9 @@ created_by_id: 1
 breadcrumb: !binary |
   5Zyo57q/55WZ6KiA
 
-description: 
-published_at: 
-status_id: 1
-keywords: 
+enable_comments: true
+comments_count: 2
+description: ""
+published_at: 2010-12-22 00:00:00 Z
+status_id: 100
+keywords: ""

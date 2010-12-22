@@ -1,8 +1,8 @@
 --- 
-class_name: 
+class_name: ""
 slug: service_platform
 updated_by_id: 
-layout_name: default_2level_page
+layout_name: default_no_date
 title: !binary |
   5pyN5Yqh5bmz5Y+w
 
@@ -11,7 +11,9 @@ created_by_id: 1
 breadcrumb: !binary |
   5pyN5Yqh5bmz5Y+w
 
-description: 
+enable_comments: false
+comments_count: 0
+description: ""
 published_at: 2010-12-20 22:52:53 Z
 status_id: 100
-keywords: 
+keywords: ""

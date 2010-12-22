@@ -1,0 +1,25 @@
+<r:page>
+  <r:if_enable_comments>
+    <r:comments:form>
+      <h3>请提出您的问题或建议</h3>
+      <r:error><p style="color:red">以下数据填写不正确,请检查.</p></r:error>
+      <p><label for="comment_author">您的名字</label><br />
+      <r:error on="author"><p style="color:red">姓名 <r:message /></p></r:error>
+      <p><r:text_field_tag name="author" id="author" class="required" size="20" /></p>
+
+      <p><label for="comment_author_email">您的电子邮件</label> (可选)<br />
+      <r:error on="author_email"><p style="color:red">邮件 <r:message /></p></r:error>
+      <p><r:text_field_tag name="author_email" size="20"/></p>
+
+      <p><label for="comment_content">您的留言</label><br />
+      <r:error on="content"><p style="color:red">留言 <r:message /></p></r:error>
+      <p><r:text_area_tag name="content" class="required" rows="9" cols="50" /></p>
+
+      <r:if_comments_simple_spam_filter_enabled>
+        <r:snippet name="comment_spam_block" />
+      </r:if_comments_simple_spam_filter_enabled>
+      <r:submit_tag name="submit" value="保存留言" />
+
+    </r:comments:form>
+  </r:if_enable_comments>
+</r:page>

@@ -2,7 +2,7 @@
 class_name: 
 slug: addon_service
 updated_by_id: 
-layout_name: <inherit> [default]
+layout_name: <inherit> [default_no_date]
 title: !binary |
   5aKe5YC85pyN5Yqh
 
@@ -11,6 +11,8 @@ created_by_id: 1
 breadcrumb: !binary |
   5aKe5YC85pyN5Yqh
 
+enable_comments: false
+comments_count: 0
 description: 
 published_at: 2010-12-20 22:53:23 Z
 status_id: 100

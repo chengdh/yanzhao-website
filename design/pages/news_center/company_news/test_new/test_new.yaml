@@ -1,8 +1,8 @@
 --- 
 class_name: ""
 slug: test_new
-updated_by_id: 
-layout_name: detail_layout
+updated_by_id: 1
+layout_name: default_title_center
 title: !binary |
   6ams5p2l6KW/5Lqa5peF5ri45be05aOr57+76L2m6Iez5bCRMjfkurrmrbvk
   uqE=
@@ -13,7 +13,9 @@ breadcrumb: !binary |
   6ams5p2l6KW/5Lqa5peF5ri45be05aOr57+76L2m6Iez5bCRMjfkurrmrbvk
   uqE=
 
+enable_comments: false
+comments_count: 0
 description: ""
-published_at: 2010-12-21 08:04:20 Z
+published_at: 2010-12-21 00:00:00 Z
 status_id: 100
 keywords: ""

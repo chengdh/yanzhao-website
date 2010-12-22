@@ -1,8 +1,8 @@
 --- 
-class_name: 
+class_name: ""
 slug: director_says
 updated_by_id: 
-layout_name: <inherit> [default]
+layout_name: <inherit> [default_no_date]
 title: !binary |
   6JGj5LqL6Ie06L6e
 
@@ -11,7 +11,9 @@ created_by_id: 1
 breadcrumb: !binary |
   6JGj5LqL6Ie06L6e
 
-description: 
+enable_comments: false
+comments_count: 0
+description: ""
 published_at: 2010-12-20 22:54:05 Z
 status_id: 100
-keywords: 
+keywords: ""

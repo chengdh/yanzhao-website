@@ -1,18 +1,18 @@
 --- 
 class_name: ""
-slug: comments
-updated_by_id: 
-layout_name: default
+slug: friendly_links
+updated_by_id: 1
+layout_name: <inherit> [default_no_date]
 title: !binary |
-  5Zyo57q/55WZ6KiA
+  5Y+L5oOF6ZO+5o6l
 
 virtual: false
 created_by_id: 1
 breadcrumb: !binary |
-  5Zyo57q/55WZ6KiA
+  5Y+L5oOF6ZO+5o6l
 
-enable_comments: true
-comments_count: 2
+enable_comments: false
+comments_count: 0
 description: ""
 published_at: 2010-12-22 00:00:00 Z
 status_id: 100

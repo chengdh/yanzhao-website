@@ -1,19 +1,19 @@
 --- 
 class_name: ""
-slug: news_center
-updated_by_id: 
+slug: other_links
+updated_by_id: 1
 layout_name: default_no_date
 title: !binary |
-  5paw6Ze75Lit5b+D
+  5YW25LuW6ZO+5o6l
 
 virtual: false
 created_by_id: 1
 breadcrumb: !binary |
-  5paw6Ze75Lit5b+D
+  5YW25LuW6ZO+5o6l
 
-enable_comments: false
+enable_comments: true
 comments_count: 0
 description: ""
-published_at: 2010-12-21 00:00:00 Z
+published_at: 2010-12-22 00:00:00 Z
 status_id: 100
 keywords: ""

@@ -1,19 +1,19 @@
 --- 
-class_name: 
-slug: statement
-updated_by_id: 
+class_name: ""
+slug: contact_us
+updated_by_id: 1
 layout_name: <inherit> [default_no_date]
 title: !binary |
-  5a6i5oi36aG755+l
+  6IGU57O75oiR5Lus
 
 virtual: false
 created_by_id: 1
 breadcrumb: !binary |
-  5a6i5oi36aG755+l
+  6IGU57O75oiR5Lus
 
 enable_comments: false
 comments_count: 0
-description: 
-published_at: 2010-12-20 22:53:31 Z
+description: ""
+published_at: 2010-12-22 00:00:00 Z
 status_id: 100
-keywords: 
+keywords: ""

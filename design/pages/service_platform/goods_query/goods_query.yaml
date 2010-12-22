@@ -2,7 +2,7 @@
 class_name: 
 slug: goods_query
 updated_by_id: 
-layout_name: <inherit> [default]
+layout_name: <inherit> [default_no_date]
 title: !binary |
   6LSn54mp5p+l6K+i
 

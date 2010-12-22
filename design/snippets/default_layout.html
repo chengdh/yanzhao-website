@@ -13,6 +13,7 @@
   </h2>
   </r:if>
   <div  class='span-24 prepend-top'>
+    <r:if cond="vars[sidebar] exists?">
     <div class='span-5' id="sidebar">
       <r:if_content part="sidebar" >
       <r:content part="sidebar"/>
@@ -34,6 +35,10 @@
         <r:yield />
       </div>
     </div>
+    </r:if>
+    <r:unless cond="vars[sidebar] exists?">
+    <r:yield />
+    </r:unless>
   </div>
   </r:snippet>
   <r:snippet name="layout_js" />

@@ -2,7 +2,7 @@
 class_name: 
 slug: statement
 updated_by_id: 
-layout_name: <inherit> [default]
+layout_name: detail_layout_no_date
 title: !binary |
   5a6i5oi36aG755+l
 

@@ -2,7 +2,7 @@
 class_name: 
 slug: touch_us
 updated_by_id: 
-layout_name: <inherit> [default]
+layout_name: default_2level_page
 title: !binary |
   6IGU57O75oiR5Lus
 
@@ -13,5 +13,5 @@ breadcrumb: !binary |
 
 description: 
 published_at: 
-status_id: 1
+status_id: 100
 keywords: 

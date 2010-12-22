@@ -2,7 +2,7 @@
 class_name: 
 slug: enterprise_spirit
 updated_by_id: 
-layout_name: <inherit> [default]
+layout_name: detail_layout_no_date
 title: !binary |
   5LyB5Lia55CG5b+1
 

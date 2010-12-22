@@ -1,6 +1,6 @@
 <div class='box' id='sub_content'>
   <table class='table-list'>
-    <r:children:each order="desc" limit="20">
+    <r:children:each order="desc" paginated="true" per_page="20" >
     <tr>
       <td><r:link /></td>
       <td width='150'><r:date format="%Y-%m-%d %H:%M" /></td>

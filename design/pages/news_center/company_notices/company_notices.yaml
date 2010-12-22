@@ -2,7 +2,7 @@
 class_name: ""
 slug: company_notices
 updated_by_id: 
-layout_name: <inherit> [default]
+layout_name: <inherit> [default_2level_page]
 title: !binary |
   5YWs5Y+45YWs5ZGK
 

@@ -2,7 +2,7 @@
 class_name: ""
 slug: trade_news
 updated_by_id: 
-layout_name: <inherit> [default]
+layout_name: <inherit> [default_2level_page]
 title: !binary |
   6KGM5Lia5Yqo5oCB
 

@@ -2,7 +2,7 @@
 class_name: 
 slug: service_flow
 updated_by_id: 
-layout_name: <inherit> [default]
+layout_name:  detail_layout_no_date
 title: !binary |
   5Y+R6LSn5rWB56iL
 

@@ -1,3 +1,12 @@
 [submodule "vendor/extensions/bespin_editor"]
 	path = vendor/extensions/bespin_editor
 	url = git://github.com/jlong/radiant-bespin-editor-extension.git
+[submodule "vendor/extensions/paperclipped"]
+	path = vendor/extensions/paperclipped
+	url = git://github.com/kbingman/paperclipped.git
+[submodule "vendor/extensions/google_maps"]
+	path = vendor/extensions/google_maps
+	url = git://github.com/rurounijones/radiant-google-maps-extension.git
+[submodule "vendor/extensions/comments"]
+	path = vendor/extensions/comments
+	url = git://github.com/saturnflyer/radiant-comments.git

@@ -1,8 +1,8 @@
 --- 
 class_name: ""
 slug: news_center
-updated_by_id: 
-layout_name: <inherit> [default]
+updated_by_id: 1
+layout_name: default_2level_page
 title: !binary |
   5paw6Ze75Lit5b+D
 
@@ -12,6 +12,6 @@ breadcrumb: !binary |
   5paw6Ze75Lit5b+D
 
 description: ""
-published_at: 2010-12-20 13:03:20 Z
+published_at: 2010-12-21 15:11:20 Z
 status_id: 100
 keywords: ""

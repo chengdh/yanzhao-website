@@ -1,19 +1,19 @@
 --- 
 class_name: ""
-slug: friendly_links
-updated_by_id: 
-layout_name: <inherit> [default_no_date]
+slug: nansanhuan
+updated_by_id: 1
+layout_name: <inherit> [default]
 title: !binary |
-  5Y+L5oOF6ZO+5o6l
+  5Y2X5LiJ546v5YiG55CG5aSE
 
 virtual: false
 created_by_id: 1
 breadcrumb: !binary |
-  5Y+L5oOF6ZO+5o6l
+  5Y2X5LiJ546v5YiG55CG5aSE
 
 enable_comments: false
 comments_count: 0
 description: ""
-published_at: 2010-12-22 00:00:00 Z
+published_at: 2010-12-23 08:39:52 Z
 status_id: 100
 keywords: ""

@@ -2,25 +2,27 @@
 <r:snippet name='layout_head' />
 <body>
   <r:snippet name="header_footer">
-  <r:if cond="vars[show_breadcrumb] exists?">
-  <h2 id='breadcrumb_bar' class='with-bborder'>
-    <r:if_content part="breadcrumb_bar" >
-    <r:content part="breadcrumb_bar" />
-    </r:if_content>
-    <r:unless_content part="breadcrumb_bar">
-    <r:content part="breadcrumb_bar" inherit="true" />
-    </r:unless_content>
-  </h2>
-  </r:if>
+  <div id="breadcrumb_bar_wrap" class="breadCrumbHolder module">
+    <div id='breadcrumb_bar' class="breadCrumb module">
+      <r:if_content part="breadcrumb_bar" >
+      <r:content part="breadcrumb_bar" />
+      </r:if_content>
+      <r:unless_content part="breadcrumb_bar">
+      <r:content part="breadcrumb_bar" inherit="true" />
+      </r:unless_content>
+    </div>
+  </div>
   <div  class='span-24 prepend-top'>
     <r:if cond="vars[sidebar] exists?">
-    <div class='span-5' id="sidebar">
-      <r:if_content part="sidebar" >
-      <r:content part="sidebar"/>
-      </r:if_content>
-      <r:unless_content part="sidebar">
-      <r:content part="sidebar" inherit="true" />
-      </r:unless_content>
+    <div class='span-5'>
+      <div id='sidebar'>
+        <r:if_content part="sidebar" >
+        <r:content part="sidebar"/>
+        </r:if_content>
+        <r:unless_content part="sidebar">
+        <r:content part="sidebar" inherit="true" />
+        </r:unless_content>
+      </div>
     </div>
     <div class='span-19 last'>
       <div class='box'>

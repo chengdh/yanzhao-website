@@ -1,0 +1,19 @@
+<ul id="primaryNav" class="col6">
+  <r:find url="/">
+  <li id="home"><r:link /></li>
+  <r:children:each>
+  <r:unless_url matches="/stylesheets/">
+  <li>
+    <r:link />
+    <ul>
+      <r:children:each>
+      <li>
+        <r:link />
+      </li>
+      </r:children:each>
+    </ul>
+  </li>
+  </r:unless_url>
+  </r:children:each>
+  </r:find>
+</ul>

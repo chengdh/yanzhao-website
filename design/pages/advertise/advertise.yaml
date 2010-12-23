@@ -2,7 +2,7 @@
 class_name: ""
 slug: advertise
 updated_by_id: 1
-layout_name: <inherit> [default]
+layout_name: default_title_left
 title: !binary |
   6K+a6IGY6Iux5omN
 

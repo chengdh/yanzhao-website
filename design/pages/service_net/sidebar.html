@@ -1,0 +1,16 @@
+<div id="map-side-bar" class='float-left'>
+  <h3 class='group-title'>营业网点</h3>
+  <ul>
+    <r:children:each>
+    <li>
+      <div class="map-location" data-jmapping="<r:content part='extended' />">
+        <a href="#" class="map-link"><r:title /></a>
+        <div class="info-box">
+          <p><r:content /></p>
+        </div>
+      </div>
+    </li>
+    </r:children:each>
+  </ul>
+</div>
+<div >

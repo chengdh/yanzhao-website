@@ -15,9 +15,12 @@ $(document).ready(function() {
 	});
 	$("#slideshow").slideView({
 		loop: true,
-                thumb: false
-                
+		thumb: false
+
 	});
+	//初始化google地图
+	$('#service_net_map').jMapping({default_zoom_level : 10});
+        $('#breadcrumb_bar').jBreadCrumb();
 
 });
 

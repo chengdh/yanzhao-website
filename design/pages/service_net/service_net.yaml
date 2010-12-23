@@ -2,7 +2,7 @@
 class_name: ""
 slug: service_net
 updated_by_id: 1
-layout_name: <inherit> [default]
+layout_name: default
 title: !binary |
   6L+Q6JCl572R57uc
 

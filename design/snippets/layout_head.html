@@ -16,7 +16,7 @@
           <!-- Chrome Frame is only invoked if meta element for compatibility mode is within the first 1K bytes code.google.com/p/chromium/issues/detail?id=23003 -->    
 
 
-          <title><r:title /></title>
+          <title><r:site:title with_page_title="true"/></title>
           <meta name="description" content="燕赵物流网站">
           <meta name="author" content="程东辉">
 
@@ -36,6 +36,12 @@
           <!-- Uncomment if you are specifically targeting less enabled mobile browsers
           <link rel="stylesheet" media="handheld" href="/stylesheets/handheld.css?v=2">  -->
 
+          <link rel="stylesheet" href="/stylesheets/slideview.css?v=2">
+          <r:if_url matches="/other_links/site_map/">
+          <link rel="stylesheet" href="/stylesheets/slickmap.css?v=2">
+          </r:if_url>
+
+          <link rel="stylesheet" href="/stylesheets/jBreadCrumb/BreadCrumb.css?v=2">
           <link rel="stylesheet" href="/stylesheets/slideview.css?v=2">
           <link rel="stylesheet" href="/stylesheets">
           <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->

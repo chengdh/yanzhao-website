@@ -14,6 +14,13 @@
 //浮动位置
 .fl{float : left;}
 .fr{float :right;}
+
+//更多
+a.more{
+  background : url(/images/more.gif) no-repeat center center;
+  width : 32px;
+  height : 14px;
+  }
 //table 列表
 .table-list{
   width : 100%;
@@ -38,6 +45,7 @@
 /*标题头样式*/
 .group-title {
   padding : 4px;
+  margin-bottom : 5px;
   a { float: right;}
 }
 /*查询运单form*/
@@ -46,19 +54,21 @@
   padding : 4px;
   textarea { 
     width : 95%;
+    height : 50px;
     margin-bottom : 10px; 
 }
 }
-
-/*营业网点*/
-#org-list {
-  height : 145px;
-  padding : 4px;
-  li{
-    padding-bottom : 5px;
-    text-overflow : ellipsis;
-    white-space : nowrap;
-    overflow : hidden;
+//在线客服
+#online_service{ 
+.with-2border;
+}
+//客户服务
+#service_list{
+  .with-2border;
+  ul {
+  padding : 5px;
+  list-style : url(/images/list-icon.gif);
+  li { padding : 0 0 5px 0;}
   }
 }
 
@@ -112,10 +122,13 @@ ul.topnav {
 }
 //底部显示新闻公告,营业网点
 #bottom_list{
-  ul li {
-  margin-top : 5px;
-  padding : 1px;
-  }
+  ul{
+    list-style :square outside url(/images/list-icon.gif);
+    li {
+    padding : 5px 0 5px 0;
+    }
+   }
+   p{padding : 5px 0 5px 0;}
 }
 /*底部footer*/
 footer{padding-top : 10px;}
@@ -132,7 +145,7 @@ footer{padding-top : 10px;}
 #sidebar{
   margin: 0 10px 10px 10px;
   padding: 5px 7px 5px 5px;
-  border-right: 2px solid #30646D;
+  border-right: 1px solid #dedede;
   ul{
     background-color: #d9e2ea;
     border: 1px solid #81a8b8;
@@ -140,7 +153,7 @@ footer{padding-top : 10px;}
     margin: 0;
     padding: 0;
     list-style: none; /* Removes the dots from the default Bullet styles */
-    font-size: 14px;
+    font-size: 12px;
     color: #3e3f3e;
     li {
         text-align: center;
@@ -168,10 +181,13 @@ footer{padding-top : 10px;}
 
   /*二级页面title*/
 .subtitle {
-  padding : 10px;
+  padding : 5px;
+  margin-bottom : 10px;
   .with-bborder;
  }
- .sub-date{ padding : 5px;}
+ .sub-date{ 
+ padding : 5px;
+ }
  //在线留言
  .comment{
     padding : 5px;

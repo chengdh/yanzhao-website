@@ -1,17 +1,20 @@
-<h3 class='group-title'>
-  新闻公告
-  <r:find url="/news_center/company_news">
-  <r:if_children>
-  <r:link>更多</r:link>
-  </r:if_children>
-  </r:find>
-</h3>
+<div class="box">
+  <h3 class='group-title'>
+    新闻公告
+    <r:find url="/news_center/company_news">
+    <r:if_children>
+    <r:link class="more ir" />
+    </r:if_children>
+    </r:find>
+  </h3>
 
-<r:find url="/news_center/company_news">
-<ul>
-  <r:children:each order="desc" limit="4">
-  <li class='text-ellipsis'><r:link />[<r:date format="%Y-%m-%d %H:%M" />] </li>
-  </r:children:each>
-  <li><r:unless_children><p>暂无信息显示</p></r:unless_children></li>
-</ul>
-</r:find>
+  <r:aggregate urls="/news_center/company_news; /news_center/company_notices">
+  <ul>
+    <r:children:each order="desc" limit="4">
+    <li><span class='text-ellipsis'><r:link /></span></li>
+    </r:children:each>
+  </ul>
+
+  <r:unless_children><p>暂无信息显示</p></r:unless_children>
+  </r:aggregate>
+</div>

@@ -1,9 +1,10 @@
 /* vim: set filetype=less : */
 /*配色*/
-@deep_blue : #1C5E9B;
+@deep_blue : #020435;
 @phone_color : #C36623;
-@menu_background : #D1DEEE;
-@group_title_color : #C2CFF1;
+@menu_background : #B5C5D2;
+@menu_color : #424B88;
+@group_title_color : @menu_background;
 @foot_color : #fff;
 
 body { background : @deep_blue;}
@@ -16,8 +17,10 @@ body { background : @deep_blue;}
 #container {background : #fff;}
 //导航菜单背景色
 #nav-wrap {background: @menu_background;}
-ul.subnav { 
+.topnav{ li a {color : @menu_color;}}
+.subnav { 
   background : @menu_background;
+  li a {color : @menu_color;}
   li a:hover {background : @menu_background;}
 }
 //group-title背景颜色

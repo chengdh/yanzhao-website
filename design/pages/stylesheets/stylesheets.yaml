@@ -2,10 +2,13 @@
 class_name: 
 slug: stylesheets
 updated_by_id: 
+sitemap: true
 layout_name: stylesheet
+change_frequency: weekly
 title: stylesheets
 virtual: false
 created_by_id: 
+priority: "0.5"
 breadcrumb: stylesheets
 enable_comments: false
 comments_count: 0

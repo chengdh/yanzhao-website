@@ -8,6 +8,7 @@
 /*with top border*/
 .with-tborder {border-top : 2px solid @border_color;}
 .with-rborder{border-right : 2px solid @border_color;}
+.with-lborder{border-left : 1px solid @border_color;}
 .with-bborder {border-bottom : 2px solid @border_color;}
 .with-dotted-bborder {border-bottom : 1px dotted gray;}
 
@@ -23,15 +24,74 @@ a.more{
   }
 //table 列表
 .table-list{
-  width : 100%;
-  tr{border-bottom : 1px dotted gray;}
-  td{padding : 5px;}
+  list-style : url(/images/list-icon.gif);
+  padding : 5px;
+  li {
+    border-bottom : 1px dotted gray;
+    padding : 5px;
+  }
+  }
+  
+  /* Pagination DIV */
+  .pagination
+  {
+  
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 5px;
+  padding: 10px;
+  }
+
+  /* Pagination Link */
+
+  .pagination a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #dddddd;
+  padding: 3px;
+  -moz-border-radius: 3px;
+  }
+
+  .pagination a:hover {
+  font-size: 10px;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #A7A7A7;
+  background-color: white;
+  padding: 3px;
+  -moz-border-radius: 3px;
+  }
+
+  /* Pagination Current Page */
+
+  .pagination a.current {
+  font-size: 10px;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #336699;
+  background-color: #F5F7FA;
+  padding: 3px;
+  -moz-border-radius: 3px;
+  }
+
+  /* Pagination Disabled Page */
+
+  .pagination span.disabled {
+  font-size: 10px;
+  text-decoration: none;
+  color: #C6C7C7;
+  border: 1px solid #C6C7C7;
+  background-color: white;
+  padding: 3px;
+  -moz-border-radius: 3px; // Rounds the corners; Works for Mozilla only
   }
 
 /*logo*/
 #logo {
   height : 60px;
   background : url(images/logo.png) no-repeat left top;
+  a {text-decoration : none;}
 }
 #touch-phone { 
   padding-left : 70px;
@@ -45,6 +105,7 @@ a.more{
 /*标题头样式*/
 .group-title {
   padding : 4px;
+  border-bottom : 5px solid #dedede;
   margin-bottom : 5px;
   a { float: right;}
 }
@@ -53,9 +114,10 @@ a.more{
   height : 100px;
   padding : 4px;
   textarea { 
-    width : 95%;
+    width : 200px;
     height : 50px;
     margin-bottom : 10px; 
+    font-style : italic;
 }
 }
 //在线客服
@@ -73,6 +135,14 @@ a.more{
 }
 
 /*导航菜单样式*/
+#nav-wrap{border-bottom : 10px solid #dedede;}
+
+//网站地图样式
+#primaryNav { 
+padding-top : 40px;
+padding-left : 5px;
+}
+  
 ul.topnav {
   padding: 0 20px;
   float: left;
@@ -147,19 +217,20 @@ footer{padding-top : 10px;}
   padding: 5px 7px 5px 5px;
   border-right: 1px solid #dedede;
   ul{
-    background-color: #d9e2ea;
-    border: 1px solid #81a8b8;
+    background-color: #c2cbce;
+    border: 1px solid #c2cbce;
+    border-left : 10px solid #c2cbce;
     border-bottom: 0px none;
     margin: 0;
     padding: 0;
     list-style: none; /* Removes the dots from the default Bullet styles */
-    font-size: 12px;
+    font-size: 0.8em;
     color: #3e3f3e;
     li {
         text-align: center;
         margin: 0;
         padding: 9px 5px;
-        border-bottom: 1px solid #81a8b8;
+        border-bottom: 1px solid #c2cbce;
         font-weight: bold;
         a {
         display: block;
@@ -169,21 +240,30 @@ footer{padding-top : 10px;}
         color: #3e3f3e;
         font-weight: bold;
         background-color: transparent;
+        img { display : none;}
         }
     }
                                                                                                        
     li:hover {
     background-color: #c2cbce;
-    font-size: 15px;
+    font-size: 1em;
+    img { display : inline;}
     }
   }
 }
 
   /*二级页面title*/
 .subtitle {
-  padding : 5px;
   margin-bottom : 10px;
-  .with-bborder;
+  background : #c2cbce;
+  border-bottom : 10px solid #dedede;
+  padding-left : 5px;
+  span{
+    background : url(/images/title-icon.gif) no-repeat center left;
+    text-indent : 20px;
+    display : block;
+    padding : 5px 5px 0 5px;
+  }
  }
  .sub-date{ 
  padding : 5px;

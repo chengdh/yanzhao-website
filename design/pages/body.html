@@ -1,15 +1,8 @@
 <div  class='span-24 prepend-top'>
   <div class='span-6 prepend-1'>
     <div class='with-2border'>
-      <h3 class='group-title'>货物追踪</h3>
-      <form action='/search_bills' id='search_bills_form'>
-        <textarea name='bill_no'>请录入运单号</textarea>
-        <p class='text-right'>
-          <input type='submit' value='查询' />
-        </p>
-      </form>
+      <r:snippet name="search_bill_form" />
     </div>
-
     <div id="online_service">
       <h3 class='group-title'>
         业务咨询
@@ -37,26 +30,13 @@
   <!--三个轮询显示的图片-->
   <div class='span-16 append-1 last'>
     <r:snippet name="home_slide" />
-    <div id='slideshow'>
-      <ul class='slideView'>
-        <li>
-          <img src="http://farm2.static.flickr.com/1440/5183750135_2382834e4d_z.jpg" />
-        </li>
-        <li>
-          <img src="http://farm2.static.flickr.com/1011/5183734417_b75d517cd0_z.jpg" />
-        </li>
-        <li>
-          <img src="images/1.jpg" />
-        </li>
-      </ul>
-    </div>
   </div>
 </div>
 <div class='span-24 prepend-top append-bottom' id="bottom_list">
-  <div class='span-8'>
+  <div class='span-8 border'>
     <r:snippet name="home_news" />
   </div>
-  <div class='span-8'>
+  <div class='span-8 border'>
     <r:snippet name="home_trade_news" />
   </div>
   <div class='span-8 last'>

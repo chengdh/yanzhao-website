@@ -1,8 +1,8 @@
-当前位置:
-<r:navigation urls="首页: / | 走进燕赵: /walk_into_yanzhao | 企业简介 : /walk_info_yanzhao/simple_introduce">
-<r:normal><a href="<r:url />"><r:title /></a></r:normal>
-<r:here><strong><r:title /></strong></r:here>
-<r:selected><strong><a href="<r:url />"><r:title /></a></strong></r:selected>
-<r:between> > </r:between>
-</r:navigation>
-
+<ul>
+  <li class='first'><a href="/">首页</a></li>
+  <r:navigation urls="走进燕赵: /walk_into_yanzhao | 企业简介 : /walk_info_yanzhao/simple_introduce">
+  <r:normal><li><a href="<r:url />"><r:title /></a></li></r:normal>
+  <r:here><li><strong><r:title /></strong></li></r:here>
+  <r:selected><li><strong><a href="<r:url />"><r:title /></a></strong></li></r:selected>
+  </r:navigation>
+</ul>

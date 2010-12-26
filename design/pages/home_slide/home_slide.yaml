@@ -1,0 +1,22 @@
+--- 
+class_name: ""
+slug: home_slide
+updated_by_id: 
+sitemap: true
+layout_name: <inherit> [default]
+change_frequency: weekly
+title: !binary |
+  6aaW6aG15Zu+54mH
+
+virtual: false
+created_by_id: 1
+priority: "0.5"
+breadcrumb: !binary |
+  6aaW6aG15Zu+54mH
+
+enable_comments: false
+comments_count: 0
+description: ""
+published_at: 2010-12-24 11:32:22 Z
+status_id: 100
+keywords: ""

@@ -2,13 +2,16 @@
 class_name: ""
 slug: test_new
 updated_by_id: 
+sitemap: true
 layout_name: default_title_center
+change_frequency: weekly
 title: !binary |
   6ams5p2l6KW/5Lqa5peF5ri45be05aOr57+76L2m6Iez5bCRMjfkurrmrbvk
   uqE=
 
 virtual: false
 created_by_id: 1
+priority: "0.5"
 breadcrumb: !binary |
   6ams5p2l6KW/5Lqa5peF5ri45be05aOr57+76L2m6Iez5bCRMjfkurrmrbvk
   uqE=

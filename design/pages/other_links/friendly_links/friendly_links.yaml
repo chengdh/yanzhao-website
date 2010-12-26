@@ -2,12 +2,15 @@
 class_name: ""
 slug: friendly_links
 updated_by_id: 
-layout_name: <inherit> [default_no_date]
+sitemap: true
+layout_name: <inherit> [default_title_left]
+change_frequency: weekly
 title: !binary |
   5Y+L5oOF6ZO+5o6l
 
 virtual: false
 created_by_id: 1
+priority: "0.5"
 breadcrumb: !binary |
   5Y+L5oOF6ZO+5o6l
 

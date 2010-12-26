@@ -2,12 +2,15 @@
 class_name: 
 slug: training_personnel
 updated_by_id: 
-layout_name: <inherit> [default]
+sitemap: true
+layout_name: <inherit> [default_title_left]
+change_frequency: weekly
 title: !binary |
   5Lq65omN5Z+55YW7
 
 virtual: false
 created_by_id: 1
+priority: "0.5"
 breadcrumb: !binary |
   5Lq65omN5Z+55YW7
 
@@ -15,5 +18,5 @@ enable_comments: false
 comments_count: 0
 description: 
 published_at: 
-status_id: 1
+status_id: 100
 keywords: 

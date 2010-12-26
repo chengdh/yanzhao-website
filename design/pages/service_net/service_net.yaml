@@ -1,13 +1,16 @@
 --- 
 class_name: ""
 slug: service_net
-updated_by_id: 1
+updated_by_id: 
+sitemap: true
 layout_name: default
+change_frequency: weekly
 title: !binary |
   6L+Q6JCl572R57uc
 
 virtual: false
 created_by_id: 1
+priority: "0.5"
 breadcrumb: !binary |
   6L+Q6JCl572R57uc
 

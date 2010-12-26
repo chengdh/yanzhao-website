@@ -1,9 +1,9 @@
-<table class='table-list'>
-  <r:children:each order="desc" paginated="true" per_page="20" >
-  <tr>
-    <td><r:link /></td>
-    <td width='150'><r:date format="%Y-%m-%d %H:%M" /></td>
-  </tr>
+<ul class='table-list'>
+  <r:children:each order="desc" paginated="true" per_page="2" previous_label="上页" next_label="下页" >
+  <li>
+    <span class='fl text-ellipsis' style="width : 400px;"><r:link /></span>
+    <span class='fr'><r:date format="%Y-%m-%d %H:%M" /></span>
+  </li>
   </r:children:each>
-</table>
+</ul>
 <r:unless_children><p>暂无信息显示</p></r:unless_children>

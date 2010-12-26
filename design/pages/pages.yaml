@@ -2,12 +2,15 @@
 class_name: ""
 slug: /
 updated_by_id: 
+sitemap: true
 layout_name: default
+change_frequency: weekly
 title: !binary |
   6aaW6aG1
 
 virtual: false
 created_by_id: 1
+priority: "0.5"
 breadcrumb: !binary |
   6aaW6aG1
 

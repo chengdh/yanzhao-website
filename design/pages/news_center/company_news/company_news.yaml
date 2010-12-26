@@ -2,12 +2,15 @@
 class_name: ""
 slug: company_news
 updated_by_id: 
-layout_name: <inherit> [default_no_date]
+sitemap: true
+layout_name: <inherit> [default_title_left]
+change_frequency: weekly
 title: !binary |
   5YWs5Y+45paw6Ze7
 
 virtual: false
 created_by_id: 1
+priority: "0.5"
 breadcrumb: !binary |
   5YWs5Y+45paw6Ze7
 

@@ -2,12 +2,15 @@
 class_name: ""
 slug: simple_introduce
 updated_by_id: 
-layout_name: <inherit> [default_no_date]
+sitemap: true
+layout_name: <inherit> [default_title_left]
+change_frequency: weekly
 title: !binary |
   5LyB5Lia566A5LuL
 
 virtual: false
 created_by_id: 1
+priority: "0.5"
 breadcrumb: !binary |
   5LyB5Lia566A5LuL
 

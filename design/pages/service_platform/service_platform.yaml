@@ -2,12 +2,15 @@
 class_name: ""
 slug: service_platform
 updated_by_id: 
+sitemap: true
 layout_name: default_title_left
+change_frequency: weekly
 title: !binary |
   5pyN5Yqh5bmz5Y+w
 
 virtual: false
 created_by_id: 1
+priority: "0.5"
 breadcrumb: !binary |
   5pyN5Yqh5bmz5Y+w
 

@@ -3,8 +3,8 @@
 .text-center {text-align : center;}
 .text-right {text-align : right;}
 /*with-border*/
-@border_color : #B5C5D2;
-.with-2border{ border : 2px solid @border_color; }
+@border_color : #cccccc;
+.with-2border{ border : 1px solid @border_color; }
 /*with top border*/
 .with-tborder {border-top : 2px solid @border_color;}
 .with-rborder{border-right : 2px solid @border_color;}
@@ -87,6 +87,7 @@ a.more{
   -moz-border-radius: 3px; // Rounds the corners; Works for Mozilla only
   }
 
+#container{margin-bottom : 20px;}
 /*logo*/
 #logo {
   height : 60px;
@@ -105,7 +106,6 @@ a.more{
 /*标题头样式*/
 .group-title {
   padding : 4px;
-  border-bottom : 5px solid #dedede;
   margin-bottom : 5px;
   a { float: right;}
 }
@@ -135,7 +135,14 @@ a.more{
 }
 
 /*导航菜单样式*/
-#nav-wrap{border-bottom : 10px solid #dedede;}
+#nav{
+  background : url(/images/back-spirit.png) repeat-x 0 -280;
+  li{
+  margin-left : 30px;
+  a,.dir{border : none;}
+  }
+  ul li { margin-left : 0;}
+  }
 
 //网站地图样式
 #primaryNav { 
@@ -143,53 +150,6 @@ padding-top : 40px;
 padding-left : 5px;
 }
   
-ul.topnav {
-  padding: 0 20px;
-  float: left;
-  li {
-    list-style: none;
-    float: left;
-    margin: 0;
-    width : 90px;
-    padding: 0 20px 0 0;
-    position: relative; /*--Declare X and Y axis base for sub navigation--*/
-    a{
-      padding: 10px 5px;
-      display: block;
-      text-decoration: none;
-      float: left;
-    }
-    span { /*--Drop down trigger styles--*/
-      width: 17px;
-      height: 35px;
-      float: left;
-      background: url(images/subnav_btn.gif) no-repeat center top;
-    }
-    ul.subnav {
-      list-style: none;
-      position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
-      left: 0; top: 35px;
-      margin: 0; padding: 0;
-      display: none;
-      float: left;
-      width: 170px;
-      border: 1px solid #C2CFF1;
-      z-index : 1001;
-      li{
-        margin: 0; padding: 0;
-        border-top: 1px solid #D1DEEE; /*--CSSreate bevel effect--*/
-        border-bottom: 1px solid #C2CFF1; /*--Create bevel effect--*/
-        clear: both;
-        width: 170px;
-        a{
-          float: left;
-          width: 145px;
-          padding-left: 20px;
-        }
-      }
-    }
-  }
-}
 //底部显示新闻公告,营业网点
 #bottom_list{
   ul{
@@ -201,12 +161,16 @@ ul.topnav {
    p{padding : 5px 0 5px 0;}
 }
 /*底部footer*/
-footer{padding-top : 10px;}
+footer {
+padding : 5px 0;
+background : url(/images/back-spirit.png) repeat-x 0 -631px;
+}
 #footer_link li{
   list-style : none;
   float : left;
   margin-right : 10px;
 }
+#copyright{padding-right : 10px;}
 
 /*-----------二级页面中的样式--------------------*/
 //导航条
@@ -215,32 +179,23 @@ footer{padding-top : 10px;}
 #sidebar{
   margin: 0 10px 10px 10px;
   padding: 5px 7px 5px 5px;
-  border-right: 1px solid #dedede;
   ul{
-    background-color: #c2cbce;
-    border: 1px solid #c2cbce;
-    border-left : 10px solid #c2cbce;
-    border-bottom: 0px none;
-    margin: 0;
-    padding: 0;
     list-style: none; /* Removes the dots from the default Bullet styles */
-    font-size: 0.8em;
-    color: #3e3f3e;
+    .sidebar-overview{
+        background : #708EA8;
+        color : #fff;
+        }
+
     li {
-        text-align: center;
-        margin: 0;
-        padding: 9px 5px;
-        border-bottom: 1px solid #c2cbce;
-        font-weight: bold;
+        background : #C8D7E3;
+        padding: 5px 5px;
+        border-bottom: 1px solid #fff;
         a {
         display: block;
         padding: 0;
         margin: 0 5px;
         text-decoration: none;
         color: #3e3f3e;
-        font-weight: bold;
-        background-color: transparent;
-        img { display : none;}
         }
     }
                                                                                                        
@@ -254,20 +209,10 @@ footer{padding-top : 10px;}
 
   /*二级页面title*/
 .subtitle {
-  margin-bottom : 10px;
-  background : #c2cbce;
-  border-bottom : 10px solid #dedede;
+  margin-top : 10px;
   padding-left : 5px;
-  span{
-    background : url(/images/title-icon.gif) no-repeat center left;
-    text-indent : 20px;
-    display : block;
-    padding : 5px 5px 0 5px;
-  }
  }
- .sub-date{ 
- padding : 5px;
- }
+ .sub-date{ padding : 5px; }
  //在线留言
  .comment{
     padding : 5px;

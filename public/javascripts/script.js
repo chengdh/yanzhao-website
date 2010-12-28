@@ -1,18 +1,7 @@
-/* Author: chengdh
-*/
+/* Author: chengdh*/
 //导航菜单
 //参考http://www.noupe.com/tutorial/drop-down-menu-jquery-css.html
 $(document).ready(function() {
-	$("ul.subnav").parent().append("<span></span>"); //Only shows   drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)
-	$("ul.topnav li").hover(function() { //When trigger is clicked...
-		//Following events are applied to the subnav itself (moving subnav up and down)
-		$(this).find("ul.subnav").slideDown('fast').show(); //Drop down thishe subnav on click
-		$(this).find('span').addClass("subhover"); //On hover over, add classass "subhover"
-	},
-	function() {
-		$(this).find("ul.subnav").slideUp('slow'); //When the minouse hovers out of the subnav, move it back up
-		$(this).find('span').removeClass("subhover"); //On hover over, add classass "subhover"
-	});
 	$("#slideshow").slideView({
 		loop: true,
 		thumb: false
@@ -24,7 +13,6 @@ $(document).ready(function() {
 	//查找运单
 	$('#webysd').watermark('请录入运单编号查询');
 	$('#btn_search').live('click', function() {
-		$.fancybox.close();
 		if ($('#webysd').val() == "") {
 			$.notifyBar({
 				html: "请录入运单号查询运单信息!",
@@ -58,8 +46,6 @@ $(document).ready(function() {
 		});
 	});
 	//初始化google地图
-	$('#service_net_map').jMapping();
-
-
+	//if ($('#service_net_map').length > 0) $('#service_net_map').jMapping();
 });
 

@@ -2,12 +2,12 @@
 /*配色*/
 @deep_blue : #020435;
 @phone_color : #C36623;
-@menu_background : #B5C5D2;
-@menu_color : #424B88;
-@group_title_color : @menu_background;
+@menu_background : #6293BB;
+@menu_color : #293D6B;
+@group_title_color : #EFEFEF;
 @foot_color : #fff;
 
-body { background : @deep_blue;}
+body { background : #cccccc;}
 //联系电话前景颜色
 #touch-phone {color : @phone_color;}
 
@@ -17,19 +17,14 @@ body { background : @deep_blue;}
 #container {background : #fff;}
 //导航菜单背景色
 #nav-wrap {background: @menu_background;}
-.topnav{ li a {color : @menu_color;}}
-.subnav { 
-  background : @menu_background;
-  li a {color : @menu_color;}
-  li a:hover {background : @menu_background;}
-}
+#nav { a,.dir{color : @menu_color;}}
 //group-title背景颜色
-.group-title {background : @group_title_color;}
-
-footer {
-  background : @deep_blue;
-  color : @foot_color;
-  #footer_link a { color : @foot_color;}
+.group-title {
+  background : @group_title_color;
+}
+footer{
+color : #fff;
+#footer_link a{color : #fff;}
 }
 
 /*---------------二级页面配色-------------------*/

@@ -16,7 +16,7 @@
   </r:unless_url>
   <div  class='span-24 prepend-top'>
     <r:if cond="vars[sidebar] exists?">
-    <div class='span-5'>
+    <div class='span-6'>
       <div id='sidebar'>
         <r:if_content part="sidebar" >
         <r:content part="sidebar"/>
@@ -26,8 +26,7 @@
         </r:unless_content>
       </div>
     </div>
-    <div class='span-19 last'>
-      <div class='box'>
+    <div class='span-18 last'>
         <r:if cond="vars[title_align] exists?">
         <!--判断是否显示时间,title是否剧中-->
         <!--div class='sub_title_img'><img src='/images/sub_title_bg.jpg' /></div-->
@@ -36,6 +35,8 @@
         <p class='sub-date text-center'> <r:date format="%Y-%m-%d %H:%M" /></p>
         </r:if>
         </r:if>
+
+      <div class='box'>
         <r:yield />
       </div>
     </div>

@@ -11,24 +11,22 @@
         <h2 id='touch-phone'>服务热线:400-888-666</h2>
       </div>
       <div id='nav-wrap' class='span-24'>
-        <ul class='topnav'>
+        <ul id="nav" class="dropdown dropdown-horizontal">
+          <li><r:find url="/"><r:link /></r:find></li>
           <li>
-            <r:find url="/"><r:link ><img src="/images/home-icon.png" width="16" height="16"></r:link></r:find>
-          </li>
-          <li>
-            <r:find url="/walk_into_yanzhao/simple_introduce"><r:link>走进燕赵</r:link></r:find>
+            <span class="dir">走进燕赵</span>
             <r:find url="/walk_into_yanzhao">
-            <ul class=subnav>
+            <ul>
               <r:children:each>
-              <li><r:link /></li>
+              <li><r:link/></li>
               </r:children:each>
             </ul>
             </r:find>
           </li>
           <li>
-            <r:find url="/news_center/company_news"><r:link>新闻中心</r:link></r:find>
+            <span class='dir'>新闻中心</span>
             <r:find url="/news_center">
-            <ul class=subnav>
+            <ul>
               <r:children:each>
               <li><r:link /></li>
               </r:children:each>
@@ -37,9 +35,9 @@
           </li>
           <li><r:find url="/service_net"><r:link/></r:find></li>
           <li>
-            <r:find url="/service_platform/service_flow"><r:link>服务平台</r:link></r:find>
+            <span class="dir">服务平台</span>
             <r:find url="/service_platform">
-            <ul class=subnav>
+            <ul>
               <r:children:each>
               <li><r:link /></li>
               </r:children:each>
@@ -47,7 +45,7 @@
             </r:find>
           </li>
           <li>
-            <r:find url="/advertise/invertise_news"><r:link>诚聘英才</r:link></r:find>
+            <span class="dir">诚聘英才</span>
             <r:find url="/advertise">
             <ul class=subnav>
               <r:children:each>
@@ -60,33 +58,28 @@
           <li><r:find url="/other_links/feed_back"><r:link/></r:find></li>
         </ul>
       </div>
-      </header>
     </div>
+    </header>
   </div>
 </div>
 <div id="container" class='container'>
   <div id="main" class='clearfix'>
     <r:yield />
   </div>
-</div>
-<footer class='clearfix'>
-<div class='container'>
-  <div  class='span-24 prepend-top append-bottom'>
-    <div class='span-12'>
-      <ul id='footer_link' class='clearfix'>
-        <li><r:find url="/other_links/site_map"><r:link/></r:find></li>
-        <li>|</li>
-        <li><r:find url="/other_links/contact_us"><r:link/></r:find></li>
-        <li>|</li>
-        <li><r:find url="/other_links/friendly_links"><r:link/></r:find></li>
-        <li>|</li>
-        <li><r:find url="/other_links/legal_term"><r:link/></r:find></li>
-      </ul>
-    </div>
-    <div class='span-12 last'>
-      <p id='copyright' class='text-right'>copyright 2010 郑州燕赵货运服务有限公司</p>
-    </div>
+  <footer class='span-24'>
+  <div class='span-12'>
+    <ul id='footer_link' class='clearfix'>
+      <li><r:find url="/other_links/site_map"><r:link/></r:find></li>
+      <li>|</li>
+      <li><r:find url="/other_links/contact_us"><r:link/></r:find></li>
+      <li>|</li>
+      <li><r:find url="/other_links/friendly_links"><r:link/></r:find></li>
+      <li>|</li>
+      <li><r:find url="/other_links/legal_term"><r:link/></r:find></li>
+    </ul>
   </div>
+  <div class='span-12 last'>
+    <p id='copyright' class='text-right'>copyright 2010 郑州燕赵货运服务有限公司</p>
+  </div>
+  </footer>
 </div>
-</footer>
-

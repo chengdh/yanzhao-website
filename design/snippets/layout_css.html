@@ -196,8 +196,12 @@ footer {
     list-style: none; /* Removes the dots from the default Bullet styles */
     background : url(/images/sidebar-corner.gif) no-repeat 100% 100%;
     padding : 0 0 19px;
-    .sidebar-overview{ padding : 5px;}
-
+    .sidebar-overview{ 
+      padding : 5px;
+      display : block;
+    }
+    //纠正ie6下的空白bug
+    li{display : inline;}
 
     li a{
         padding: 5px 5px;

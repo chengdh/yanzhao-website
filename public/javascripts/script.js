@@ -8,8 +8,6 @@ $(document).ready(function() {
 
 	});
 	$('#breadcrumb_bar').jBreadCrumb();
-	//fancybox
-	$('.fancybox').fancybox();
 	//查找运单
 	$('#webysd').watermark('请录入运单编号查询');
 	$('#btn_search').live('click', function() {
@@ -46,6 +44,6 @@ $(document).ready(function() {
 		});
 	});
 	//初始化google地图
-	//if ($('#service_net_map').length > 0) $('#service_net_map').jMapping();
+	if ($('#service_net_map').length > 0) $('#service_net_map').jMapping();
 });
 

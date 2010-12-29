@@ -1,9 +1,9 @@
 --- 
-class_name: 
+class_name: ""
 slug: goods_query
-updated_by_id: 
+updated_by_id: 1
 sitemap: true
-layout_name: null_layout
+layout_name: default_title_left
 change_frequency: weekly
 title: !binary |
   6LSn54mp5p+l6K+i
@@ -16,7 +16,7 @@ breadcrumb: !binary |
 
 enable_comments: false
 comments_count: 0
-description: 
-published_at: 2010-12-20 22:53:02 Z
+description: ""
+published_at: 2010-12-29 11:21:29 Z
 status_id: 100
-keywords: 
+keywords: ""

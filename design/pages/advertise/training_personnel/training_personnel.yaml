@@ -1,7 +1,7 @@
 --- 
-class_name: ""
+class_name: 
 slug: training_personnel
-updated_by_id: 1
+updated_by_id: 
 sitemap: true
 layout_name: default_title_left
 change_frequency: weekly
@@ -16,7 +16,7 @@ breadcrumb: !binary |
 
 enable_comments: false
 comments_count: 0
-description: ""
+description: 
 published_at: 2010-12-25 16:00:00 Z
 status_id: 100
-keywords: ""
+keywords: 

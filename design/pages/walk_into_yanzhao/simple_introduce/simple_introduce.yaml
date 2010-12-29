@@ -1,7 +1,7 @@
 --- 
 class_name: ""
 slug: simple_introduce
-updated_by_id: 
+updated_by_id: 1
 sitemap: true
 layout_name: <inherit> [default_title_left]
 change_frequency: weekly
@@ -17,6 +17,6 @@ breadcrumb: !binary |
 enable_comments: false
 comments_count: 0
 description: ""
-published_at: 2010-12-20 22:53:50 Z
+published_at: 2010-12-27 16:00:00 Z
 status_id: 100
 keywords: ""

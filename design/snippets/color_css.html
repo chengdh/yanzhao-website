@@ -4,7 +4,7 @@
 @phone_color : #C36623;
 @menu_background : #6293BB;
 @menu_color : #293D6B;
-@group_title_color : #EFEFEF;
+@group_title_color : #708EA8;
 @foot_color : #fff;
 
 body { background : #cccccc;}
@@ -21,6 +21,8 @@ body { background : #cccccc;}
 //group-title背景颜色
 .group-title {
   background : @group_title_color;
+  color : #fff;
+  a{color : #fff;}
 }
 footer{
 color : #fff;
@@ -28,8 +30,16 @@ color : #fff;
 }
 
 /*---------------二级页面配色-------------------*/
-@sidebar_background : #fff;
+@sidebar_background : #C4D4E1;
+
 #sidebar ul{
-  background : @sidebar_background;
-  li a{color : #000;}
+  li a{
+    background : @sidebar_background;
+    color : #293D6B;
+  }
+  .sidebar-overview{
+        background : #708EA8;
+        color : #fff;
+        }
+
 }

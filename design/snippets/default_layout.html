@@ -29,7 +29,12 @@
     <div class='span-18 last'>
         <r:if cond="vars[title_align] exists?">
         <!--判断是否显示时间,title是否剧中-->
-        <!--div class='sub_title_img'><img src='/images/sub_title_bg.jpg' /></div-->
+        <r:if_content part="banner">
+        <div class='sub_title_img'><img src='<r:content part="banner"/>' /></div>
+        </r:if_content>
+        <r:unless_content part="banner">
+        <div class='sub_title_img'><img src='<r:content part="banner" inherit="true"/>' /></div>
+        </r:unless_content>
         <h2 class='subtitle <r:puts value_for="vars[title_align]" />'><span><r:title /></span></h2>
         <r:if cond="vars[show_date] exists?">
         <p class='sub-date text-center'> <r:date format="%Y-%m-%d %H:%M" /></p>

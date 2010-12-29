@@ -1,5 +1,5 @@
 --- 
-class_name: ""
+class_name: 
 slug: home_slide3
 updated_by_id: 
 sitemap: true
@@ -16,7 +16,7 @@ breadcrumb: !binary |
 
 enable_comments: false
 comments_count: 0
-description: ""
+description: 
 published_at: 2010-12-24 11:44:57 Z
 status_id: 100
-keywords: ""
+keywords: 

@@ -3,19 +3,11 @@
     <div class='with-2border'>
       <r:snippet name="search_bill_form" />
     </div>
-    <div id="online_service">
-      <h3 class='group-title'>
-        业务咨询
-      </h3>
-      <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=542340109&site=qq&menu=yes">
-        <img border="0" src="http://wpa.qq.com/pa?p=2:542340109:42" alt="点击这里业务咨询" title="点击这里业务咨询">
-      </a>
-    </div>
     <div id="service_list">
       <h3 class='group-title'>
         客户服务
       </h3>
-      <ul class='box'>
+      <ul>
         <li>
           <r:find url="/service_platform/service_flow"><r:link /></r:find>
         </li>
@@ -25,7 +17,16 @@
 
       </ul>
     </div>
-
+    <div id="online_service">
+      <h3 class='group-title'>
+        在线咨询
+      </h3>
+      <div>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=542340109&site=qq&menu=yes">
+          <img border="0" src="http://wpa.qq.com/pa?p=2:542340109:42" alt="点击这里在线咨询" title="点击这里在线咨询">
+        </a>
+      </div>
+    </div>
   </div>
   <!--三个轮询显示的图片-->
   <div class='span-16 append-1 last'>
@@ -34,10 +35,11 @@
 </div>
 <div class='span-24' id="bottom_list">
   <div class='span-8 border'>
-    <r:snippet name="home_news" />
-  </div>
-  <div class='span-8 border'>
     <r:snippet name="home_trade_news" />
+  </div>
+
+  <div class='span-8 border'>
+    <r:snippet name="home_news" />
   </div>
   <div class='span-8 last'>
     <r:snippet name="home_service_nets" />

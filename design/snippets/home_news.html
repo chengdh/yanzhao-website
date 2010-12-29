@@ -1,6 +1,6 @@
 <div class="box">
-  <h3 class='group-title'>
-    新闻公告
+  <h3 class='group-title clearfix'>
+    <span>新闻动态</span>
     <r:find url="/news_center/company_news">
     <r:if_children>
     <r:link class="more ir" />
@@ -8,7 +8,7 @@
     </r:find>
   </h3>
 
-  <r:aggregate urls="/news_center/company_news; /news_center/company_notices">
+  <r:aggregate urls="/news_center/company_news; /news_center/trade_news">
   <ul>
     <r:children:each order="desc" limit="4">
     <li><span class='text-ellipsis' style='width : 200px;display : block;'><r:link /></span></li>

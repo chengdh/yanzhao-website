@@ -1,9 +1,9 @@
 --- 
 class_name: ""
 slug: enterprise_spirit
-updated_by_id: 
+updated_by_id: 1
 sitemap: true
-layout_name: <inherit> [default_title_left]
+layout_name: default_title_left
 change_frequency: weekly
 title: !binary |
   5LyB5Lia55CG5b+1
@@ -17,6 +17,6 @@ breadcrumb: !binary |
 enable_comments: false
 comments_count: 0
 description: ""
-published_at: 2010-12-20 22:53:57 Z
+published_at: 2010-12-29 07:31:29 Z
 status_id: 100
 keywords: ""

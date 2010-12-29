@@ -1,12 +1,13 @@
+<!--公司公告-->
 <div class="box">
-  <h3 class='group-title'>
-    行业动态
-    <r:find url="/news_center/trade_news">
+  <h3 class='group-title clearfix'>
+    <span>公司公告</span>
+    <r:find url="/news_center/company_notices">
     <r:link class="ir more" />
     </r:find>
   </h3>
 
-  <r:find url="/news_center/trade_news">
+  <r:find url="/news_center/company_notices">
   <ul>
     <r:children:each order="desc" limit="4">
     <li><span class='text-ellipsis'><r:link /> </span></li>

@@ -1,14 +1,14 @@
 <div class="box">
   <h3 class='group-title clearfix'>
     <span>营业网点</span> 
-    <r:find url="/service_net">
+    <r:find url="/service_net/outlets">
     <r:if_children>
     <r:link class="ir more"/>
     </r:if_children>
     </r:find>
   </h3>
 
-  <r:find url="/service_net">
+  <r:find url="/service_net/outlets">
   <ul>
     <r:children:each order="desc" limit="4">
     <li><span class="text-ellipsis"><r:link /></span> </li>

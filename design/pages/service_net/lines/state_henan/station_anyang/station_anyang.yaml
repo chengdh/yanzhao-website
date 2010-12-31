@@ -1,0 +1,23 @@
+--- 
+class_name: ""
+position: 2
+slug: station_anyang
+updated_by_id: 
+sitemap: true
+layout_name: <inherit> [default]
+change_frequency: weekly
+title: !binary |
+  5a6J6Ziz
+
+virtual: false
+created_by_id: 1
+priority: "0.5"
+breadcrumb: !binary |
+  5a6J6Ziz
+
+enable_comments: false
+comments_count: 0
+description: ""
+published_at: 2010-12-11 11:19:11 Z
+status_id: 100
+keywords: ""

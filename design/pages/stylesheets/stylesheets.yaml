@@ -1,5 +1,6 @@
 --- 
 class_name: 
+position: 1
 slug: stylesheets
 updated_by_id: 
 sitemap: true

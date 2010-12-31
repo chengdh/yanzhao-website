@@ -1,0 +1,23 @@
+--- 
+class_name: ""
+position: 2
+slug: state_hebei
+updated_by_id: 
+sitemap: true
+layout_name: <inherit> [default]
+change_frequency: weekly
+title: !binary |
+  5rKz5YyX55yB
+
+virtual: false
+created_by_id: 1
+priority: "0.5"
+breadcrumb: !binary |
+  5rKz5YyX55yB
+
+enable_comments: false
+comments_count: 0
+description: ""
+published_at: 2010-12-11 11:17:46 Z
+status_id: 100
+keywords: ""

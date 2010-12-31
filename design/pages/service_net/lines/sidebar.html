@@ -1,0 +1,19 @@
+<div id="line-side-bar" class='fl'>
+  <r:children:each>
+  <h3><a href='#' class='state_toggle'><r:title /></a></h3>
+  <div>
+    <ul>
+      <r:children:each>
+      <li>
+        <div class="map-location" data-jmapping="<r:content part='extended' />">
+          <a href="#" class="map-link"><r:title /></a>
+          <div class="info-box">
+            <p><r:content /></p>
+          </div>
+        </div>
+      </li>
+      </r:children:each>
+    </ul>
+  </div>
+  </r:children:each>
+</div>

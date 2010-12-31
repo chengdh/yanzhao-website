@@ -1,5 +1,6 @@
 --- 
 class_name: 
+position: 2
 slug: other_links
 updated_by_id: 
 sitemap: true

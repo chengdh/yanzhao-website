@@ -1,5 +1,6 @@
 --- 
 class_name: 
+position: 7
 slug: service_net
 updated_by_id: 
 sitemap: true

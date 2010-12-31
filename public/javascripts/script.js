@@ -2,10 +2,32 @@
 //导航菜单
 //参考http://www.noupe.com/tutorial/drop-down-menu-jquery-css.html
 $(document).ready(function() {
+	/*
 	$("#slideshow").slideView({
 		loop: true,
 		thumb: false
 
+	});
+        */
+	//滚动新闻
+	$('marquee').marquee('pointer').mouseover(function() {
+		$(this).trigger('stop');
+	}).mouseout(function() {
+		$(this).trigger('start');
+	}).mousemove(function(event) {
+		if ($(this).data('drag') == true) {
+			this.scrollLeft = $(this).data('scrollX') + ($(this).data('x') - event.clientX);
+		}
+	}).mousedown(function(event) {
+		$(this).data('drag', true).data('x', event.clientX).data('scrollX', this.scrollLeft);
+	}).mouseup(function() {
+		$(this).data('drag', false);
+	});
+	$('#slideshow').Horinaja({
+		capture: 'slideshow',
+		delai: 0.3,
+		duree: 4,
+		pagination: true
 	});
 	$('#breadcrumb_bar').jBreadCrumb();
 	//查找运单
@@ -43,7 +65,16 @@ $(document).ready(function() {
 
 		});
 	});
+	//精品线路侧边栏
+	$('#line-side-bar').accordion();
+	//点击不同区域时,切换地图显示
+	$('#line-side-bar').bind('accordionchange', function() {
+		$('#service_net_map').data('jMapping').update();
+	});
+
 	//初始化google地图
-	if ($('#service_net_map').length > 0) $('#service_net_map').jMapping();
+	if ($('#service_net_map').length > 0) $('#service_net_map').jMapping({
+		side_bar_selector: '.ui-accordion-content-active:first'
+	});
 });
 

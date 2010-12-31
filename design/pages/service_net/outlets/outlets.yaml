@@ -1,22 +1,25 @@
 --- 
-class_name: 
-slug: station_fenli
+class_name: ""
+position: 4
+slug: outlets
 updated_by_id: 
 sitemap: true
 layout_name: <inherit> [default]
 change_frequency: weekly
 title: !binary |
-  54Gr6L2m56uZ5YiG55CG5aSE
+  6JCl5Lia572R54K5
 
 virtual: false
 created_by_id: 1
 priority: "0.5"
 breadcrumb: !binary |
-  54Gr6L2m56uZ5YiG55CG5aSE
+  6JCl5Lia572R54K5
 
 enable_comments: false
 comments_count: 0
-description: 
-published_at: 2010-12-21 08:39:35 Z
+description: !binary |
+  6JCl5Lia572R54K5
+
+published_at: 2010-12-20 00:00:00 Z
 status_id: 100
-keywords: 
+keywords: ""

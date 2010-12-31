@@ -1,5 +1,6 @@
 --- 
 class_name: 
+position: 5
 slug: advertise
 updated_by_id: 
 sitemap: true

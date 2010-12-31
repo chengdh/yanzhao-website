@@ -1,5 +1,6 @@
 --- 
 class_name: 
+position: 4
 slug: service_platform
 updated_by_id: 
 sitemap: true

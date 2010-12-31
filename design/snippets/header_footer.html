@@ -33,7 +33,16 @@
             </ul>
             </r:find>
           </li>
-          <li><r:find url="/service_net"><r:link/></r:find></li>
+          <li>
+            <span class="dir">运营网络</span>
+            <r:find url="/service_net">
+            <ul>
+              <r:children:each>
+              <li><r:link /></li>
+              </r:children:each>
+            </ul>
+            </r:find>
+          </li>
           <li>
             <span class="dir">服务平台</span>
             <r:find url="/service_platform">

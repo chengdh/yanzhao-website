@@ -1,5 +1,6 @@
 --- 
 class_name: 
+position: 1
 slug: persons_in_yanzhao
 updated_by_id: 
 sitemap: true

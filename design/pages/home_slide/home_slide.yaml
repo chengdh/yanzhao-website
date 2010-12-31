@@ -1,5 +1,6 @@
 --- 
 class_name: 
+position: 8
 slug: home_slide
 updated_by_id: 
 sitemap: true

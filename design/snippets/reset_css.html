@@ -1,22 +1,24 @@
 /* vim: set filetype=less :  */
 /*重置样式表的某些样式 */
 
+//drop menu的宽度
+ul.dropdown ul {width : 100px;}
+
 //重置blueprint的box样式
 .box {background:transparent;}
 
 //slideshow的宽度和高度需要重新设置
 /*滚动图片*/
 #slideshow {
-  width:630px;
-  height:310px;
-  .slidebar{
-    background:url(/images/slideView_bar.gif) repeat-x;
-  }
-
-  .desc {width:100%;}
-
-  img {
-  width:630px;
-  height:310px;
+  border : 4px solid #DDDDDD;
+  width : 650px;
+  height : 290px;
+  img{
+    width : 650px;
+    height : 250px;
   }
 }
+ol.horinaja_pagination li a {color : #000;}
+
+//下拉菜单字体
+.dropdown{ font-size : 11px;}

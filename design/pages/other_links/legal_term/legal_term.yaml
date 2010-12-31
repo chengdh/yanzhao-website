@@ -1,7 +1,8 @@
 --- 
 class_name: ""
+position: 3
 slug: legal_term
-updated_by_id: 1
+updated_by_id: 
 sitemap: true
 layout_name: <inherit> [default_title_left]
 change_frequency: weekly

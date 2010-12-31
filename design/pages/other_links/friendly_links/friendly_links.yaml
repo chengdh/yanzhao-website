@@ -1,5 +1,6 @@
 --- 
 class_name: 
+position: 1
 slug: friendly_links
 updated_by_id: 
 sitemap: true

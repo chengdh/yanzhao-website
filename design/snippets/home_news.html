@@ -11,7 +11,11 @@
   <r:aggregate urls="/news_center/company_news; /news_center/trade_news">
   <ul>
     <r:children:each order="desc" limit="4">
-    <li><span class='text-ellipsis' style='width : 200px;display : block;'><r:link /></span></li>
+    <li>
+      <marquee behavior="scroll" scrollamount="1" direction="left" width="230">
+      <p><r:link /></p>
+      </marquee>
+    </li>
     </r:children:each>
   </ul>
 

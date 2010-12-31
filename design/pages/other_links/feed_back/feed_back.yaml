@@ -1,22 +1,23 @@
 --- 
-class_name: 
+class_name: ""
+position: 2
 slug: feed_back
 updated_by_id: 
 sitemap: true
 layout_name: <inherit> [default_title_left]
 change_frequency: weekly
 title: !binary |
-  5Zyo57q/55WZ6KiA
+  5ZKo6K+i6K+E5Lu3
 
 virtual: false
 created_by_id: 1
 priority: "0.5"
 breadcrumb: !binary |
-  5Zyo57q/55WZ6KiA
+  5ZKo6K+i6K+E5Lu3
 
 enable_comments: true
 comments_count: 0
-description: 
-published_at: 2010-12-22 00:00:00 Z
+description: ""
+published_at: 2010-12-31 02:26:22 Z
 status_id: 100
-keywords: 
+keywords: ""

@@ -24,13 +24,13 @@ a.more{
   }
 //table 列表
 .table-list{
-  list-style : url(/images/list-icon.gif);
-  padding : 5px;
+  list-style : none;
   li {
+    background : url(/images/list-icon.gif) no-repeat 0 8px;
+    padding : 5px 10px;
     border-bottom : 1px dotted gray;
-    padding : 5px;
   }
-  }
+}
   
   /* Pagination DIV */
   .pagination
@@ -162,13 +162,12 @@ padding-left : 5px;
   ul{
     list-style : none;
     li {
-      background : url(/images/list-icon.gif) no-repeat 0 8px;
+      background : url(/images/list-icon.gif) no-repeat center left;
       padding : 5px 10px;
     }
     a{text-decoration : none;}
    }
-   p{
-    padding : 5px;}
+   p{padding : 5px;}
 }
 /*底部footer*/
 footer {
@@ -221,6 +220,8 @@ footer {
   .fixed-sidebar{
     margin-top : 20px;
     .text-center;
+    a{ padding : 0;}
+    img{width : 100%;}
   }
 }
 
@@ -257,19 +258,21 @@ footer {
  }
 
  //地图显示
- #map-side-bar{
+ #map-side-bar,#line-side-bar{
  margin-left : 10px;
  width : 20%; 
  .fl;
   li { padding-top : 5px;}
  }
  #map_wrap{
- margin-left : 15px;
- .with-lborder;
-  padding : 4px;
   .fl;
+  border : 4px solid #DDDDDD;
+  margin : 0 15px 15px 15px;
   width : 75%;
   li {.with-bborder;}
  }
- #service_net_map{height : 500px;width : 100%;}
+ #service_net_map{
+ height : 500px;
+ width : 100%;
+ }
 

@@ -78,7 +78,8 @@
             zoom: settings.default_zoom_level
           });
         }
-        map.fitBounds(bounds);
+        if(places.length > 1)
+          map.fitBounds(bounds);
         if (settings.force_zoom_level){
           map.setZoom(settings.force_zoom_level);
         }

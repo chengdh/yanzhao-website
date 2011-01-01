@@ -66,15 +66,41 @@ $(document).ready(function() {
 		});
 	});
 	//精品线路侧边栏
-	$('#line-side-bar').accordion();
+	$('#line-side-bar').accordion({
+		active: false
+	});
 	//点击不同区域时,切换地图显示
 	$('#line-side-bar').bind('accordionchange', function() {
 		$('#service_net_map').data('jMapping').update();
 	});
 
-	//初始化google地图
-	if ($('#service_net_map').length > 0) $('#service_net_map').jMapping({
-		side_bar_selector: '.ui-accordion-content-active:first'
+	if ($('#line-side-bar').length > 0) $('#service_net_map').jMapping({
+		side_bar_selector: '.ui-accordion-content-active:first',
+		map_config: {
+			navigationControlOptions: {
+				style: google.maps.NavigationControlStyle.DEFAULT
+			},
+			center: new google.maps.LatLng(35.82, 104.85),
+			//中国地图为中心
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			zoom: 4 //缩放
+		}
+
 	});
+
+	//初始化google地图
+	if ($('#map-side-bar').length > 0) $('#service_net_map').jMapping({
+		map_config: {
+			navigationControlOptions: {
+				style: google.maps.NavigationControlStyle.DEFAULT
+			},
+			center: new google.maps.LatLng(34.7512, 113.6577),
+			//以郑州市为中心
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			zoom: 11 //缩放
+		}
+
+	});
+
 });
 

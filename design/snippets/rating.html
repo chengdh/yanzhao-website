@@ -1,0 +1,19 @@
+<div id="rating_container" class="box with-2border">
+  <h3>请对我们的服务进行评价</h3>
+  <r:rating>
+    <p>
+      当前平均 <span class="rating_average"><r:average /></span>/5 星 (<span class="rating_vote_description"><r:vote_description /></span>)
+    </p>
+
+    <r:form>
+      <div class="current_rating" style="width: <r:image_width />px;">  当前平均 <span class="rating_average"><r:average /></span>/5 星. </div>
+      <ol>
+        <r:points:each>
+          <li>
+            <button type="submit" name="rating" class="star<r:point_value />" value="<r:point_value />"></button>
+          </li>
+        </r:points:each>
+      </ol>
+    </r:form>
+  </r:rating>
+</div>

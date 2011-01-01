@@ -1,5 +1,6 @@
 --- 
-class_name: 
+average_rating: 0.0
+class_name: ""
 position: 2
 slug: company_news
 updated_by_id: 
@@ -17,7 +18,7 @@ breadcrumb: !binary |
 
 enable_comments: false
 comments_count: 0
-description: 
+description: ""
 published_at: 2010-12-20 13:03:20 Z
 status_id: 100
-keywords: 
+keywords: ""

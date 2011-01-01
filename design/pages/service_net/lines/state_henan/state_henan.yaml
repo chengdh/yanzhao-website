@@ -1,8 +1,9 @@
 --- 
+average_rating: 0.0
 class_name: ""
 position: 1
 slug: state_henan
-updated_by_id: 1
+updated_by_id: 
 sitemap: true
 layout_name: <inherit> [default]
 change_frequency: weekly
@@ -19,5 +20,5 @@ enable_comments: false
 comments_count: 0
 description: ""
 published_at: 2010-12-11 03:17:29 Z
-status_id: 90
+status_id: 100
 keywords: ""

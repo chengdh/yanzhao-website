@@ -15,30 +15,28 @@
         overflow : hidden;
       }
       #webysd{ 
-        width : 180px;
-        height : 50px;
-        overflow : auto;
+        width : 110px;
+      }
+      #result {margin-top : 2px;}
+      #result p {
+        border-top : 1px dotted gray;
+        padding : 0;
+        margin : 0;
+        font-size : 10px;
       }
     </style>
   </head>
   <body>
     <div id='search_bills_form'>
-      <textarea id='webysd'></textarea>
-      <p>
-        <input id="btn_search" type='button' value='查询' />
-      </p>
+      <input type='text' id='webysd' />
+      <input id="btn_search" type='button' value='查询' />
     </div>
+    <div id='result'></div>
     <script>
       $(document).ready(function(){
         $('#btn_search').live('click', function() {
           if ($('#webysd').val() == "") {
-            $.notifyBar({
-              html: "请录入运单号查询运单信息!",
-              delay: 2000,
-              animationSpeed: "normal",
-              cls: 'error'
-            });
-
+            $('#result').html("<p>请录入运单号查询运单信息!</p>");
             return;
           }
           $.ajax({
@@ -53,12 +51,7 @@
               alert_html += "<p class='text-center'>" + ret_result.attr('fhr') + "</p>";
               alert_html += "<p class='text-center'>" + ret_result.attr('hk') + "</p>";
               alert_html += "<p class='text-center'>" + ret_result.attr('tkzt') + "</p>";
-              $.notifyBar({
-                html: alert_html,
-                delay: 5000,
-                animationSpeed: "normal",
-                cls: 'success'
-              });
+              $('#result').html(alert_html);
             }
 
           });

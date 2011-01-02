@@ -31,39 +31,15 @@ $(document).ready(function() {
 	});
 	$('#breadcrumb_bar').jBreadCrumb();
 	//查找运单
-	$('#webysd').watermark('请录入运单编号查询');
-	$('#btn_search').live('click', function() {
-		if ($('#webysd').val() == "") {
-			$.notifyBar({
-				html: "请录入运单号查询运单信息!",
-				delay: 2000,
-				animationSpeed: "normal",
-				cls: 'error'
-			});
-
-			return;
-		}
-		$.ajax({
-			url: "http://www.yanzhaowuliu.com:8888/lmis/servlet/SelectWebServlet?ztra=hwcx&webysd=" + $('#webysd').val(),
-			type: 'get',
-			dataType: 'xml',
-			success: function(xml) {
-				var ret_result = $(xml).find('town').first();
-				var alert_html = "";
-				alert_html += "<p class='text-center'>" + ret_result.attr('StrYsd') + "</p>";
-				alert_html += "<p>" + ret_result.attr('hw') + "</p>";
-				alert_html += "<p class='text-center'>" + ret_result.attr('fhr') + "</p>";
-				alert_html += "<p class='text-center'>" + ret_result.attr('hk') + "</p>";
-				alert_html += "<p class='text-center'>" + ret_result.attr('tkzt') + "</p>";
-				$.notifyBar({
-					html: alert_html,
-					delay: 5000,
-					animationSpeed: "normal",
-					cls: 'success'
-				});
-			}
-
+	//绑定提示信息
+	$('#search_trigger').bind('search_bill:warn_blank', function() {
+		$.notifyBar({
+			html: "请录入运单号查询运单信息!",
+			delay: 2000,
+			animationSpeed: "normal",
+			cls: 'error'
 		});
+
 	});
 	//精品线路侧边栏
 	$('#line-side-bar').accordion({

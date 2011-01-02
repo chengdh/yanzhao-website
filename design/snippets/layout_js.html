@@ -23,6 +23,7 @@
 <script type="text/javascript" src="/javascripts/mylibs/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="/javascripts/mylibs/class.horinaja.jquery.js"></script>
 <script type="text/javascript" src="/javascripts/mylibs/jquery.marquee.js"></script>
+
 <r:snippet name="rating_asset_includes" />
 
 <!-- scripts concatenated and minified via ant build script-->
@@ -31,6 +32,9 @@
 <!-- end concatenated and minified scripts-->
 
 
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 <!--[if lt IE 7 ]>
 <script> //fix any <img> or .png_bg background-images
   $.getScript("/javascripts/libs/dd_belatedpng.js",function(){ DD_belatedPNG.fix('img, .png_bg'); });

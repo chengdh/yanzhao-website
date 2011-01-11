@@ -17,9 +17,12 @@
       #webysd{ 
         width : 110px;
       }
-      #result {margin-top : 2px;}
-      #result p {
+      #result 
+      {
         border-top : 1px dotted gray;
+        margin-top : 2px;
+      }
+      #result p {
         padding : 0;
         margin : 0;
         font-size : 10px;
@@ -31,7 +34,7 @@
       <input type='text' id='webysd' />
       <input id="btn_search" type='button' value='查询' />
     </div>
-    <div id='result'></div>
+    <div id='result'><p>请录入运单号查询运单信息!</p></div>
     <script>
       $(document).ready(function(){
         $('#btn_search').live('click', function() {

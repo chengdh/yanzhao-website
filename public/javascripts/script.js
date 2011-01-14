@@ -2,13 +2,6 @@
 //导航菜单
 //参考http://www.noupe.com/tutorial/drop-down-menu-jquery-css.html
 $(document).ready(function() {
-	/*
-	$("#slideshow").slideView({
-		loop: true,
-		thumb: false
-
-	});
-        */
 	//滚动新闻
 	$('marquee').marquee('pointer').mouseover(function() {
 		$(this).trigger('stop');
@@ -23,12 +16,19 @@ $(document).ready(function() {
 	}).mouseup(function() {
 		$(this).data('drag', false);
 	});
+        //处理滚动新闻时的一些显示问题
+        $('.pointer > div').attr('style','padding : 100px 5px;');
 	$('#slideshow').Horinaja({
 		capture: 'slideshow',
 		delai: 0.3,
 		duree: 4,
 		pagination: true
 	});
+        //处理滚动图片的数字显示
+
+        $('ol.horinaja_pagination').attr('style','height : 20px;');
+        $('.horinaja_pagination li').attr('style','float : right;');
+        $('.horinaja_pagination li a').attr('style','width : 10px;padding : 0 5px;height : auto;font-size : 12px;');
 	$('#breadcrumb_bar').jBreadCrumb();
 	//查找运单
 	//绑定提示信息

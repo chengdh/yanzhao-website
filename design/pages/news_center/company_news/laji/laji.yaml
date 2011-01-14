@@ -1,0 +1,24 @@
+--- 
+average_rating: 0.0
+class_name: ""
+position: 3
+slug: laji
+updated_by_id: 
+sitemap: true
+layout_name: <inherit> [default_title_left]
+change_frequency: weekly
+title: !binary |
+  5Z6D5Zy+6YKu5Lu26L+U5Zue5LqG
+
+virtual: false
+created_by_id: 1
+priority: "0.5"
+breadcrumb: !binary |
+  5Z6D5Zy+6YKu5Lu26L+U5Zue5LqG
+
+enable_comments: false
+comments_count: 0
+description: ""
+published_at: 2011-01-12 16:00:00 Z
+status_id: 100
+keywords: ""

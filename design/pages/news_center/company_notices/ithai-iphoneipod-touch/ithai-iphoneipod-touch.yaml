@@ -1,0 +1,26 @@
+--- 
+average_rating: 0.0
+class_name: ""
+position: 1
+slug: ithai-iphoneipod-touch
+updated_by_id: 1
+sitemap: true
+layout_name: <inherit> [default_title_left]
+change_frequency: weekly
+title: !binary |
+  aVRoYWkg4oCUIOKAnOmtheWKm+azsOWbveKAneW6lOeUqO+8iOaUr+aMgWlQ
+  aG9uZeWSjGlQb2QgVG91Y2jvvIk=
+
+virtual: false
+created_by_id: 1
+priority: "0.5"
+breadcrumb: !binary |
+  aVRoYWkg4oCUIOKAnOmtheWKm+azsOWbveKAneW6lOeUqO+8iOaUr+aMgWlQ
+  aG9uZeWSjGlQb2QgVG91Y2jvvIk=
+
+enable_comments: false
+comments_count: 0
+description: ""
+published_at: 2011-01-14 13:34:14 Z
+status_id: 100
+keywords: ""

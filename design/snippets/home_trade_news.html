@@ -1,5 +1,5 @@
 <!--公司公告-->
-<div class="box">
+<div class="box" style='height : 85px;'>
   <h3 class='group-title clearfix'>
     <span>公司公告</span>
     <r:find url="/news_center/company_notices">
@@ -8,15 +8,12 @@
   </h3>
 
   <r:find url="/news_center/company_notices">
-  <ul>
-    <r:children:each order="desc" limit="4">
-    <li>
-      <marquee behavior="scroll" scrollamount="1" direction="left" width="230">
-      <p><r:link /></p>
-      </marquee>
-    </li>
-    </r:children:each>
-  </ul>
+  <marquee behavior="scroll" direction="up" scrollamount="1" height="80" width="260" class='scroll_news'>
+  <r:children:each order="desc" limit="4">
+  <h3 class='text-center'><r:link /></h3> 
+  <p><r:content /></p>
+  </r:children:each>
+  </marquee>
   <r:unless_children><p>暂无信息显示</p></r:unless_children>
   </r:find>
 </div>

@@ -1,0 +1,17 @@
+如果你使用支持HTML文本发送的邮件系统，比如GMail，Y!Mail和Hotmail，知道如何通过发送HTML邮件来测试这些邮箱的反XSS过滤器是很有帮助的。我不是说要写web应用安全领域的指导手册。发送一封随机HTML邮件，包含一些躲避JavaScript过滤机制的渗透代码，需要仅包含特殊的特定文本和命令行指令。复制/粘贴下面内容到文本中：
+
+MIME-Version: 1.0
+From: your.name 
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Subject: INSERT_SUBJECT
+
+INSERT WHATEVER HTML/JAVASCRIPT CONTENT
+
+.
+
+    最后的那个点不是打错了，它用来确定文件结束的信息。然后，保持Content-Type,Content-Transfer-Encoding, 和 MIME-Version 报头的原样。除此之外，你可以在主题和内容部分随意的修改和输入你编写的HTML/JavaScript注入代码。你可以用同样的格式随意编写回信地址以及添加任意的邮件报头。一旦你决定了要发送的内容，输入如下Unix命令：
+
+sendmail -temail_recipient@domain.com < email.txt
+
+-t参数后输入你要发送到的邮件地址，并直接发送邮件文本，不管是否有文件名称。就这样了，好好玩XSS吧。

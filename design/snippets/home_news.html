@@ -1,4 +1,4 @@
-<div class="box">
+<div class="box" style='height : 85px;'>
   <h3 class='group-title clearfix'>
     <span>新闻动态</span>
     <r:find url="/news_center/company_news">
@@ -12,9 +12,7 @@
   <ul>
     <r:children:each order="desc" limit="4">
     <li>
-      <marquee behavior="scroll" scrollamount="1" direction="left" width="230">
-      <p><r:link /></p>
-      </marquee>
+      <p class="text-ellipsis" style='width : 237px;'><r:link /></p>
     </li>
     </r:children:each>
   </ul>

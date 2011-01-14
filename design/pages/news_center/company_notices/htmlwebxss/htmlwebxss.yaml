@@ -1,0 +1,26 @@
+--- 
+average_rating: 0.0
+class_name: ""
+position: 3
+slug: htmlwebxss
+updated_by_id: 
+sitemap: true
+layout_name: <inherit> [default_title_left]
+change_frequency: weekly
+title: !binary |
+  5Y+R6YCBSFRNTOmCruS7tu+8jOi/m+ihjFdlYumCruS7tuezu+e7n1hTU+a1
+  i+ivlQ==
+
+virtual: false
+created_by_id: 1
+priority: "0.5"
+breadcrumb: !binary |
+  5Y+R6YCBSFRNTOmCruS7tu+8jOi/m+ihjFdlYumCruS7tuezu+e7n1hTU+a1
+  i+ivlQ==
+
+enable_comments: false
+comments_count: 0
+description: ""
+published_at: 2011-01-10 16:00:00 Z
+status_id: 100
+keywords: ""

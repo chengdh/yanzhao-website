@@ -1,9 +1,9 @@
 --- 
 average_rating: 0.0
 class_name: 
-position: 1
+position: 4
 slug: enterprise_culture
-updated_by_id: 
+updated_by_id: 1
 sitemap: true
 layout_name: <inherit> [default_title_left]
 change_frequency: weekly

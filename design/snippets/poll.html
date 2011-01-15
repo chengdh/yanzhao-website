@@ -1,0 +1,37 @@
+<div id="rating_container" class="box with-2border">
+  <h3>请对我们的服务进行评价,为我们提供改进的动力</h3>
+  <r:poll title="service_poll">
+
+  <div id='poll_result'>
+    <table style='width : 100%;'>
+      <r:options:each>
+      <tr>
+        <td width="100"><r:title /></td>
+        <td width='400'>
+          <div class='poll_option_<r:random />'style='background : #0066cc;width : <r:percent_responses />%;'>&nbsp;</div>
+        </td>
+        <td>
+          (<r:percent_responses />%)  
+        </td>
+        <td>
+          共<r:number_responses />人
+        </td>
+      </tr>
+      </r:options:each>
+      <tfoot>
+        <tr><td colspan='4' class='text-center'>共<r:poll:total_responses />人投票</td></tr>
+      </tfoot>
+    </table>
+  </div>
+  <r:unless_submitted>
+  <r:form>
+  <r:options:each>
+  <p><r:input /> <r:title /></p>
+  </r:options:each>
+  <p>
+    <r:submit value="投票" id="poll_submit" />
+  </p>
+  </r:form>
+  </r:unless_submitted>
+  </r:poll>
+</div>

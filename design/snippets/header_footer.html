@@ -2,20 +2,20 @@
   <div class='container'>
     <div class='span-24 prepend-top'>
       <header class='clearfix'>
-      <div class='span-14'>
+      <div class='span-15'>
         <h1 id='logo' class='png_bg'>
           <a href='/'>燕赵物流</a>
         </h1>
       </div>
-      <div class='span-10 last'>
-        <h2 id='touch-phone' class='png_bg'>服务热线:400-888-666</h2>
+      <div class='span-9 last'>
+        <h2 id='touch-phone' class='png_bg'>服务热线:0371-66753090</h2>
       </div>
       <div id='nav-wrap' class='span-24'>
         <ul id="nav" class="dropdown dropdown-horizontal">
           <li><r:find url="/"><r:link /></r:find></li>
           <li>
             <span class="dir">走进燕赵</span>
-            <r:find url="/walk_into_yanzhao">
+            <r:find url="/walk_into_yanzhao" order="asc" by="position">
             <ul>
               <r:children:each>
               <li><r:link/></li>
@@ -25,7 +25,7 @@
           </li>
           <li>
             <span class='dir'>新闻中心</span>
-            <r:find url="/news_center">
+            <r:find url="/news_center" order="asc" by="position">
             <ul>
               <r:children:each>
               <li><r:link /></li>
@@ -35,7 +35,7 @@
           </li>
           <li>
             <span class="dir">运营网络</span>
-            <r:find url="/service_net">
+            <r:find url="/service_net" order="asc" by="position">
             <ul>
               <r:children:each>
               <li><r:link /></li>
@@ -45,7 +45,7 @@
           </li>
           <li>
             <span class="dir">服务平台</span>
-            <r:find url="/service_platform">
+            <r:find url="/service_platform" order="asc" by="position">
             <ul>
               <r:children:each>
               <li><r:link /></li>
@@ -55,7 +55,7 @@
           </li>
           <li>
             <span class="dir">诚聘英才</span>
-            <r:find url="/advertise">
+            <r:find url="/advertise" order="asc" by="position">
             <ul class=subnav>
               <r:children:each>
               <li><r:link /></li>
@@ -88,7 +88,7 @@
     </ul>
   </div>
   <div class='span-12 last'>
-    <p id='copyright' class='text-right'>copyright&reg; 2010 郑州燕赵货运服务有限公司</p>
+    <p id='copyright' class='text-right'>copyright&reg; 2010 郑州市燕赵货运服务有限公司&nbsp;豫ICP备10012327号</p>
   </div>
   </footer>
 </div>

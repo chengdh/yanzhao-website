@@ -27,7 +27,6 @@ $(document).ready(function() {
         //处理滚动图片的数字显示
 
         $('ol.horinaja_pagination').attr('style','height : 20px;');
-        $('.horinaja_pagination li').attr('style','float : right;');
         $('.horinaja_pagination li a').attr('style','width : 10px;padding : 0 5px;height : auto;font-size : 12px;');
 	$('#breadcrumb_bar').jBreadCrumb();
 	//查找运单
@@ -41,12 +40,21 @@ $(document).ready(function() {
 		});
 
 	});
+        //服务评价,条状图颜色
+
+
+
 	//精品线路侧边栏
 	$('#line-side-bar').accordion({
 		active: false
 	});
+	//精品线路侧边栏
+	$('#map-side-bar').accordion({
+		active: false
+	});
+
 	//点击不同区域时,切换地图显示
-	$('#line-side-bar').bind('accordionchange', function() {
+	$('#line-side-bar,#map-side-bar').bind('accordionchange', function() {
 		$('#service_net_map').data('jMapping').update();
 	});
 
@@ -66,6 +74,7 @@ $(document).ready(function() {
 
 	//初始化google地图
 	if ($('#map-side-bar').length > 0) $('#service_net_map').jMapping({
+		side_bar_selector: '.ui-accordion-content-active:first',
 		map_config: {
 			navigationControlOptions: {
 				style: google.maps.NavigationControlStyle.DEFAULT

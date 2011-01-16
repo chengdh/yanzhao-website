@@ -3,7 +3,7 @@ average_rating: 0.0
 class_name: 
 position: 3
 slug: company_notices
-updated_by_id: 1
+updated_by_id: 
 sitemap: true
 layout_name: <inherit> [default_title_left]
 change_frequency: weekly

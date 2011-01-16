@@ -25,6 +25,6 @@ cn:
     results: '投票结果'
   polls_controller:
     responses_cleared: '所有 "{{poll}}"相关的投票反馈信息已被清空.'
-  poll_index: '选项'
-  results: '人数'
+  poll_index: 
+    results: '人数'
   

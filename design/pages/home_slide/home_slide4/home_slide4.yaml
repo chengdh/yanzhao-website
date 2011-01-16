@@ -1,24 +1,24 @@
 --- 
 average_rating: 0.0
 class_name: ""
-position: 1
-slug: company_news
+position: 4
+slug: home_slide4
 updated_by_id: 
 sitemap: true
-layout_name: <inherit> [default_title_left]
+layout_name: <inherit> [default]
 change_frequency: weekly
 title: !binary |
-  5YWs5Y+45paw6Ze7
+  6aaW6aG15Zu+54mHNA==
 
 virtual: false
 created_by_id: 1
 priority: "0.5"
 breadcrumb: !binary |
-  5YWs5Y+45paw6Ze7
+  6aaW6aG15Zu+54mHNA==
 
 enable_comments: false
 comments_count: 0
 description: ""
-published_at: 2010-12-20 13:03:20 Z
+published_at: 2011-01-05 16:00:00 Z
 status_id: 100
 keywords: ""

@@ -3,7 +3,7 @@ average_rating: 0.0
 class_name: 
 position: 2
 slug: news_center
-updated_by_id: 1
+updated_by_id: 
 sitemap: true
 layout_name: default_title_left
 change_frequency: weekly

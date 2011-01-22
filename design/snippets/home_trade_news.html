@@ -1,12 +1,11 @@
 <!--公司公告-->
-<div class="box" style='height : 85px;' id="home_notice_list">
+<div class="box" id="home_notice_list">
   <h3 class='group-title clearfix'>
     <span>公司公告</span>
     <r:find url="/news_center/company_notices">
     <r:link class="ir more" />
     </r:find>
   </h3>
-
   <r:find url="/news_center/company_notices">
   <marquee behavior="scroll" direction="up" speed='1' scrollamount="1" height="80" width="260" class='scroll_news'>
   <r:children:each order="desc" limit="4">

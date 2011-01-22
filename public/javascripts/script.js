@@ -16,18 +16,19 @@ $(document).ready(function() {
 	}).mouseup(function() {
 		$(this).data('drag', false);
 	});
-        //处理滚动新闻时的一些显示问题
-        $('.pointer > div').attr('style','padding : 100px 5px;');
+	//处理滚动新闻时的一些显示问题
+	$('.pointer > div').css({
+		'white-space': ''
+	});
 	$('#slideshow').Horinaja({
 		capture: 'slideshow',
 		delai: 0.3,
 		duree: 4,
 		pagination: true
 	});
-        //处理滚动图片的数字显示
-
-        $('ol.horinaja_pagination').attr('style','height : 20px;');
-        $('.horinaja_pagination li a').attr('style','width : 10px;padding : 0 5px;height : auto;font-size : 12px;');
+	//处理滚动图片的数字显示
+	$('ol.horinaja_pagination').attr('style', 'height : 20px;');
+	$('.horinaja_pagination li a').attr('style', 'width : 10px;padding : 0 5px;height : auto;font-size : 12px;');
 	$('#breadcrumb_bar').jBreadCrumb();
 	//查找运单
 	//绑定提示信息
@@ -40,19 +41,31 @@ $(document).ready(function() {
 		});
 
 	});
-        //服务评价,条状图颜色
-
-
-
+	//服务评价,条状图颜色
 	//精品线路侧边栏
 	$('#line-side-bar').accordion({
 		active: false
 	});
-	//精品线路侧边栏
+
+	if ($('#in_outlets').length > 0) {
+		$('#map-side-bar').accordion();
+		$(document).bind('afterMapping.jMapping', function() {
+
+			//营业网点侧边栏
+			var outlet_id = $('#in_outlets').data('outlet');
+			$(outlet_id).trigger('click');
+
+		});
+
+	}
+	//营业网点侧边栏
+	else
+
 	$('#map-side-bar').accordion({
 		active: false
 	});
-
+	//$('#map-side-bar').accordion();
+	//$('#<r:slug />').trigger('click');
 	//点击不同区域时,切换地图显示
 	$('#line-side-bar,#map-side-bar').bind('accordionchange', function() {
 		$('#service_net_map').data('jMapping').update();

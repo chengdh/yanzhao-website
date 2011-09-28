@@ -1,0 +1,41 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    RedCloth (4.2.8)
+    capistrano (2.9.0)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
+    highline (1.6.2)
+    mysql (2.8.1)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-sftp (2.0.5)
+      net-ssh (>= 2.0.9)
+    net-ssh (2.2.1)
+    net-ssh-gateway (1.1.0)
+      net-ssh (>= 1.99.1)
+    nokogiri (1.5.0)
+    rack (1.1.2)
+    radiant (0.9.1)
+      RedCloth (>= 4.0.0)
+      rack (~> 1.1.0)
+      rake (>= 0.8.3)
+      will_paginate (~> 2.3.11)
+    rake (0.8.7)
+    sanitize (2.0.3)
+      nokogiri (>= 1.4.4, < 1.6)
+    will_paginate (2.3.16)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  capistrano (~> 2.9.0)
+  mysql (= 2.8.1)
+  radiant (~> 0.9.1)
+  rake (= 0.8.7)
+  sanitize
+  will_paginate (~> 2.3.11)

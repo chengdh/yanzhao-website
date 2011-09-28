@@ -18,7 +18,7 @@ Radiant::Initializer.run do |config|
   # extensions in vendor/extensions are loaded, in alphabetical order. :all
   # can be used as a placeholder for all extensions not explicitly named.
   # config.extensions = [ :all ]
-  
+
   # By default, only English translations are loaded. Remove any of these from
   # the list below if you'd like to provide any of the supported languages
   config.extensions -= [:dutch_language_pack, :french_language_pack, :german_language_pack,
@@ -75,7 +75,7 @@ Radiant::Initializer.run do |config|
     end
   end
 
-  config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
+  config.gem 'will_paginate', :version => '~> 2.3.11'
   config.gem 'sanitize'
 
   config.after_initialize do

@@ -1,0 +1,3 @@
+[submodule "vendor/extensions/comments"]
+	path = vendor/extensions/comments
+	url = git://github.com/saturnflyer/radiant-comments.git

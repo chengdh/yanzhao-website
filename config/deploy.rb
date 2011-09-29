@@ -1,9 +1,9 @@
 #add bundler support
 require 'bundler/capistrano'
-set :application, "yanzhao_website"
+set :application, "yanzhao-website"
 #set :repository,  "git://github.com/chengdh/il_yanzhao.git"
 set :repository, "."
-set :local_repository, "file:///media//WORK/yanzhao_website/.git"
+set :local_repository, "file:///media//WORK/yanzhao-website/.git"
 #set :local_repository, "file://f:/il_yanzhao/.git"
 set :deploy_via, :copy
 set :copy_cache, true
@@ -45,6 +45,12 @@ namespace :deploy do
   desc "安装extensions"
   task :install_extensions,:role => :web do
     run "cd #{deploy_to}/current && git submodule init"
+  end
+  desc "migrate all extensions"
+  task :migrate_all_exten,:role => :web do
+    ["bespin_editor","comments","conditional_tags",'drag_order','file_system','less','no_dev_cache','page_preview','paperclipped','parameterized_snippets','polls','ratings','site_title','sitemap_xml','variables','wym_editor_filter'].each do |ex|
+      run "cd #{deploy_to}/current && rake radiant:extensions:#{ex}:migrate"
+    end
   end
   after "deploy:symlink", "deploy:install_extensions"
 end

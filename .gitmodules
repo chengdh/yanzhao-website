@@ -4,3 +4,6 @@
 [submodule "vendor/extensions/conditional_tags"]
 	path = vendor/extensions/conditional_tags
 	url = git://github.com/SwankInnovations/radiant-conditional-tags-extension.git
+[submodule "vendor/extensions/drag_order"]
+	path = vendor/extensions/drag_order
+	url = git://github.com/bright4/radiant-drag-order.git

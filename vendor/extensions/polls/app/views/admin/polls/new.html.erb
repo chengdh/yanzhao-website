@@ -1,9 +1,0 @@
-<% include_stylesheet 'admin/polls'
-   include_javascript 'polls'
-   include_javascript 'date_selector'
-   content_for :page_scripts do %>
-     Event.addBehavior({ '#poll_start_date': DateSelector });
-<% end %>
-<h1><%= t('polls_action.new') %></h1>
-
-<%= render :partial => 'form' %>

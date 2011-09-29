@@ -22,3 +22,6 @@
 [submodule "vendor/extensions/paperclipped"]
 	path = vendor/extensions/paperclipped
 	url = git://github.com/kbingman/paperclipped.git
+[submodule "vendor/extensions/parameterized_snippets"]
+	path = vendor/extensions/parameterized_snippets
+	url = git://github.com/manuelmeurer/radiant-parameterized-snippets-extension.git

@@ -40,3 +40,6 @@
 [submodule "vendor/extensions/sitemap_xml"]
 	path = vendor/extensions/sitemap_xml
 	url = git://github.com/Aissac/radiant-sitemap-xml-extension.git
+[submodule "vendor/extensions/variables"]
+	path = vendor/extensions/variables
+	url = git://github.com/SwankInnovations/radiant-variables-extension.git

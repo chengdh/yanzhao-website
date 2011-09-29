@@ -13,3 +13,6 @@
 [submodule "vendor/extensions/less"]
 	path = vendor/extensions/less
 	url = http://github.com/rk/Radiant-Less
+[submodule "vendor/extensions/no_dev_cache"]
+	path = vendor/extensions/no_dev_cache
+	url = git://github.com/jgarber/radiant-no_dev_cache-extension.git

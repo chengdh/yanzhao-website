@@ -37,3 +37,6 @@
 [submodule "vendor/extensions/site_title"]
 	path = vendor/extensions/site_title
 	url = git://github.com/smallspark/site_title.git
+[submodule "vendor/extensions/sitemap_xml"]
+	path = vendor/extensions/sitemap_xml
+	url = git://github.com/Aissac/radiant-sitemap-xml-extension.git

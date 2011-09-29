@@ -48,7 +48,7 @@ namespace :deploy do
   end
   desc "migrate all extensions"
   task :migrate_all_extensions,:role => :web do
-    ["comments",'drag_order','file_system','less','no_dev_cache','page_preview','paperclipped','parameterized_snippets','polls','ratings','site_title','sitemap_xml','wym_editor_filter'].each do |ex|
+    ["comments",'drag_order','less','no_dev_cache','page_preview','paperclipped','parameterized_snippets','polls','ratings','site_title','sitemap_xml','wym_editor_filter'].each do |ex|
       run "cd #{deploy_to}/current && rake radiant:extensions:#{ex}:migrate RAILS_ENV=production"
     end
   end

@@ -3,12 +3,21 @@
 # Uncomment below to force Rails into production mode when
 # you don't control web/app server and can't set it the proper way
 # ENV['RAILS_ENV'] ||= 'production'
-
+require 'thread'
 # Specifies gem version of Rails to use when vendor/rails is not present
 require File.join(File.dirname(__FILE__), 'boot')
 
 require 'radius'
-
+if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.3.7')
+  module Rails
+    class GemDependency
+      def requirement
+        r = super
+        (r == Gem::Requirement.default) ? nil : r
+      end
+    end
+  end
+end
 Radiant::Initializer.run do |config|
   # Skip frameworks you're not going to use (only works if using vendor/rails).
   # To use Rails without a database, you must remove the Active Record framework

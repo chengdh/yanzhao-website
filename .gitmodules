@@ -10,3 +10,6 @@
 [submodule "vendor/extensions/file_system"]
 	path = vendor/extensions/file_system
 	url = git://github.com/nelstrom/radiant-file-system-extension.git
+[submodule "vendor/extensions/less"]
+	path = vendor/extensions/less
+	url = http://github.com/rk/Radiant-Less

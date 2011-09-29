@@ -28,3 +28,6 @@
 [submodule "vendor/extensions/polls"]
 	path = vendor/extensions/polls
 	url = git://github.com/nuex/radiant-polls-extension.git
+[submodule "vendor/extensions/ratings"]
+	path = vendor/extensions/ratings
+	url = http://github.com/mikehale/radiant-ratings-extension/

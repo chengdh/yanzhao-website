@@ -44,12 +44,12 @@ namespace :deploy do
   end
   desc "安装extensions"
   task :install_extensions,:role => :web do
-    run "cd #{deploy_to}/current && git submodule init"
+    run "cd #{deploy_to}/current && git submodule init && git submodule update"
   end
   desc "migrate all extensions"
   task :migrate_all_extensions,:role => :web do
     ["comments","conditional_tags",'drag_order','file_system','less','no_dev_cache','page_preview','paperclipped','parameterized_snippets','polls','ratings','site_title','sitemap_xml','variables','wym_editor_filter'].each do |ex|
-      run "cd #{deploy_to}/current && rake radiant:extensions:#{ex}:migrate"
+      run "cd #{deploy_to}/current && rake radiant:extensions:#{ex}:migrate RAILS_ENV=production"
     end
   end
   after "deploy:symlink", "deploy:install_extensions"

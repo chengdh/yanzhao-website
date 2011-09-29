@@ -18,7 +18,7 @@ set :branch,:master
 #role :app, "your app-server here"                          # This may be the same as your `Web` server
 #role :db,  "your primary db-server here", :primary => true # This is where Rails migrations will run
 #role :db,  "your slave db-server here"
-server "116.255.186.172",:app,:web,:db,:primary => true
+server "www.yanzhaowuliu.com",:app,:web,:db,:primary => true
 
 set :user,"root"
 set :use_sudo,false
@@ -42,4 +42,9 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
+  desc "安装extensions"
+  task :install_extensions,:role => :web do
+    run "cd #{deploy_to}/current && git submodule init"
+  end
+  after "deploy:symlink", "deploy:install_extensions"
 end

@@ -16,3 +16,6 @@
 [submodule "vendor/extensions/no_dev_cache"]
 	path = vendor/extensions/no_dev_cache
 	url = git://github.com/jgarber/radiant-no_dev_cache-extension.git
+[submodule "vendor/extensions/page_preview"]
+	path = vendor/extensions/page_preview
+	url = http://github.com/tricycle/radiant-page-preview-extension.git

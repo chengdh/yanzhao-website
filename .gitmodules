@@ -1,3 +1,6 @@
 [submodule "vendor/extensions/comments"]
 	path = vendor/extensions/comments
 	url = git://github.com/saturnflyer/radiant-comments.git
+[submodule "vendor/extensions/conditional_tags"]
+	path = vendor/extensions/conditional_tags
+	url = git://github.com/SwankInnovations/radiant-conditional-tags-extension.git

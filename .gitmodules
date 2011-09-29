@@ -34,3 +34,6 @@
 [submodule "vendor/extensions/reorder"]
 	path = vendor/extensions/reorder
 	url = git://github.com/radiant/radiant-reorder-extension.git
+[submodule "vendor/extensions/site_title"]
+	path = vendor/extensions/site_title
+	url = git://github.com/smallspark/site_title.git

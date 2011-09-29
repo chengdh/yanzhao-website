@@ -43,3 +43,6 @@
 [submodule "vendor/extensions/variables"]
 	path = vendor/extensions/variables
 	url = git://github.com/SwankInnovations/radiant-variables-extension.git
+[submodule "vendor/extensions/wym_editor_filter"]
+	path = vendor/extensions/wym_editor_filter
+	url = git://github.com/jomz/radiant-wym-editor-filter-extension.git

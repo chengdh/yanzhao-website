@@ -105,7 +105,7 @@ function boot_wym(elem) {
   // construct a wymeditor with overridden values and functions
   jQuery(elem).wymeditor({
 
-    lang: 'zh_cn',
+    lang: 'en',
     skin: 'radiant',
     iframeBasePath: '/wymeditor/wymeditor/iframe/radiant/',
 
@@ -254,7 +254,7 @@ function boot_wym(elem) {
       editors[elem.id] = wym._index;
 
       // bind assets dropping if paperclipped bucket is present
-      if($('show-bucket'))
+      if($$('#show-bucket a'))
         bind_droppability(wym._iframe);
 
       // grow iframe on typing
@@ -517,9 +517,9 @@ WYMeditor.editor.prototype.exec = function(cmd) {
     break;
 
     case WYMeditor.PREVIEW:
-      if (jQuery('#show-preview').length > 0) {
+      if (jQuery('input[name="preview_page"]')) {
         // page_preview is installed, use it
-        jQuery('#show-preview').click();
+        jQuery('input[name="preview_page"]').click();
       } else {
         // use built-in preview dialog
         this.dialog(WYMeditor.PREVIEW);

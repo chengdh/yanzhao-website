@@ -8,7 +8,12 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
+    fastercsv (1.5.4)
     highline (1.6.2)
+    less (2.0.7)
+      therubyracer (~> 0.9.2)
+    libv8 (3.3.10.2)
+    mollom (0.2.3)
     mysql (2.8.1)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
@@ -27,6 +32,8 @@ GEM
     rake (0.8.7)
     sanitize (2.0.3)
       nokogiri (>= 1.4.4, < 1.6)
+    therubyracer (0.9.4)
+      libv8 (~> 3.3.10)
     will_paginate (2.3.16)
 
 PLATFORMS
@@ -34,8 +41,11 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano (~> 2.9.0)
+  fastercsv (~> 1.5.4)
+  less (~> 2.0.7)
+  mollom (~> 0.2.3)
   mysql (= 2.8.1)
   radiant (~> 0.9.1)
   rake (= 0.8.7)
-  sanitize
+  sanitize (~> 2.0.3)
   will_paginate (~> 2.3.11)

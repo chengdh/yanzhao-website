@@ -1,10 +1,6 @@
 .drag_order img {
 	cursor: move;
 }
-#content table.index td.drag_order {
-	width:3px;
-	padding-left:10px;
-}
 #content table.index tr.dragging {
 	background-color: #D3ECF4;
 }

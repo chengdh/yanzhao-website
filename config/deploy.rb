@@ -47,8 +47,8 @@ namespace :deploy do
     run "cd #{deploy_to}/current && git submodule init"
   end
   desc "migrate all extensions"
-  task :migrate_all_exten,:role => :web do
-    ["bespin_editor","comments","conditional_tags",'drag_order','file_system','less','no_dev_cache','page_preview','paperclipped','parameterized_snippets','polls','ratings','site_title','sitemap_xml','variables','wym_editor_filter'].each do |ex|
+  task :migrate_all_extensions,:role => :web do
+    ["comments","conditional_tags",'drag_order','file_system','less','no_dev_cache','page_preview','paperclipped','parameterized_snippets','polls','ratings','site_title','sitemap_xml','variables','wym_editor_filter'].each do |ex|
       run "cd #{deploy_to}/current && rake radiant:extensions:#{ex}:migrate"
     end
   end

@@ -31,3 +31,6 @@
 [submodule "vendor/extensions/ratings"]
 	path = vendor/extensions/ratings
 	url = http://github.com/mikehale/radiant-ratings-extension/
+[submodule "vendor/extensions/reorder"]
+	path = vendor/extensions/reorder
+	url = git://github.com/radiant/radiant-reorder-extension.git

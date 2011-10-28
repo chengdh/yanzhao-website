@@ -1,0 +1,186 @@
+---
+cn:
+  account: 'Account'
+  activerecord:
+    errors:
+      messages:
+        blank: '需要' # required
+        invalid: '无效' #invalid_format
+        not_a_number: '不是一个数字' # must be number
+        taken: '请使用名字' # name_in_use
+        too_long: '字符超过限制' # character_limit
+        too_short: '{{count}}字以上' # character_minimum
+      models:
+        page:
+          attributes:
+            slug:
+              taken: '使用slug' # slug_in_use
+        user:
+          attributes:
+            email:
+              invalid: 'email不正确' # invalid_email
+            login:
+              taken: '已经登陆' # login already in use
+            password:
+              confirmation: '必须输入确认密码' # password_confirmation
+  add_child: '添加子项'
+  add_part: '增加part'
+  add_tab: '增加tab'
+  admin: '管理员'
+  available_tags: '有效的tag'
+  available_tags_for: '使用有效的tag'
+  body: '正文'
+  breadcrumb: 'Breadcrumb'
+  buttons:
+    create: '{{name}}创建'
+    save_and_continue: '保存并继续'
+    save_changes: '保存'
+  cancel: '取消'
+  change: '修改'
+  close: '关闭'
+  content: '内容'
+  content_type: '类型'
+  creating_status: '创建身份 {{model}}&#8230;'
+  date:
+    abbr_day_names: [日, 一, 二, 三, 四, 五, 六]
+    abbr_month_names: [~, 一月, 二月, 三月, 四月, 五月, 六月, 七月, 八月, 九月, 十月, 十一月, 十二月]
+    day_names: [周日, 周一, 周二, 周三, 周四, 周五, 周六]
+    formats:
+      default: "%Y年%m月%d日"
+      long: "%B %e, %Y"
+      only_day: "%e"
+      short: "%e %b"
+    month_names: [~, 一月, 二月, 三月, 四月, 五月, 六月, 七月, 八月, 九月, 十月, 十一月, 十二月]
+    order: [ :year, :month, :day ]
+  delete_layout: '删除样式'
+  delete_pages: '{{pages}}删除'
+  delete_snippet: '删除片段'
+  delete_user: '删除用户'
+  description: '说明'
+  design: '设计'
+  designer: '设计者'
+  draft: '草稿'
+  edit_layout: '编辑样式'
+  edit_page: '编辑页面'
+  edit_snippet: '编辑片段'
+  edit_user: '编辑用户'
+  email_address: 'email 地址'
+  extension: '扩展'
+  extensions: '扩展列表'
+  filter: '过滤'
+  hidden: '隐藏中'
+  hide: '隐藏'
+  keywords: '关键词'
+  language: '语言'
+  layout: '样式'
+  layouts: '样式列表'
+  log_out: '退出'
+  logged_in_as: '登录的是'
+  login: '登录'
+  modify: '修改'
+  more: '更多'
+  name: '名字'
+  new_layout: '新的样式'
+  new_page: '新的页面'
+  new_password: '新密码'
+  new_snippet: '新的片段'
+  new_user: '新建用户'
+  no_pages: '没有该页面'
+  notes: '注释'
+  optional: '选项'
+  or: '或'
+  page: '页面'
+  page_page: '页面 Part'
+  page_title: '标题'
+  page_type: '类型'
+  pages: '页面列表'
+  pages_controller:
+    removed_many: "所有页面已被删除"
+    removed_one: "该页面已被删除"
+    saved: "已保存"
+  password: '密码'
+  password_confirmation: '确认密码'
+  personal: '用户'
+  personal_preferences: '用户资料'
+  please_login: '请登录'
+  powered_by: 'Powered by'
+  preferences: '设置'
+  preferences_controller:
+    error_updating: '设置时发生错误'
+    updated: '设置已更新'
+  published: '发布'
+  published_at: '发布于：'
+  published_on: '发布在：'
+  reference: '参考'
+  remember_me: '记住我'
+  remember_me_in_this_browser: '记住我'
+  remove: '删除'
+  remove_layout: '删除样式'
+  remove_page: '删除页面'
+  remove_pages: '删除 {{pages}}'
+  remove_tab: '删除tab'
+  remove_user: '删除用户'
+  required: '必须'
+  resource_controller:
+    not_found: "{{humanized_model_name}} 没有发现"
+    removed: "{{humanized_model_name}}已删除"
+    saved: "{{humanized_model_name}}已保存"
+    update_conflict: "读取时、{{humanized_model_name}}被变更。一但保存、可能全部会发生改变"
+    validation_errors: "无效" # "Validation errors occurred while processing this form. Please take a moment to review the form and correct any input errors before continuing."
+  reviewed: '编辑中'
+  roles: '身份'
+  saving_changes: Saving Changes
+  saving_preferences: Saving preferences
+  scheduled: "目录"
+  search_tags: '搜索tag:'
+  select:
+    inherit: '<inherit>'
+    none: '无'
+    normal: '普通'
+    default: '<默认>'
+  settings: '设置'
+  slug: 'Slug'
+  snippet: '片段'
+  snippets: '片段列表'
+  status: '状态'
+    # Warnings and info text:
+  testing: Testing
+  text:
+    layouts:
+      remove_warning: '样式会被<strong class="warning">永久删除</strong>确定吗？'
+    pages: 
+      remove_warning: '{{pages}}会被<strong class="warning">永久删除</strong>确定吗？'
+    snippets:
+      remove_warning: '片段会被<strong class="warning">永久删除</strong>确定吗？'
+    users: 
+      remove_warning: '你确定要删除 <strong class="warning">永久删除</strong>下面的用户？'
+  this_file_language: "中文"
+  time:
+    am: '上午'
+    formats:
+      datetime:
+        formats:
+          default: "%Y-%m-%dT%H:%M:%S%Z"
+      default: "%a %b %d %H:%M:%S %Z %Y"
+      long: "%B %d, %Y %H:%M"
+      only_second: "%S"
+      short: "%d %b %H:%M"
+      time: "%H:%M"
+      timestamp: "%H:%M <small>%p</small>、 %Y年%m月%d日"
+    pm: '下午'
+  timestamp:
+    at: '时间：'
+    by: '变更者：'
+    last_updated: '最后更新日'
+  user: '用户'
+  username: '登录名'
+  users: '用户列表'
+  users_controller:
+    cannot_delete_self: '不能删除自己'
+  username_or_email: '用户名或email'
+  version: '版本'
+  view_site: '站点预览'
+  website: '站点'
+  welcome_controller:
+    invalid_user: '无效的用户'
+    logged_out: '已退出'

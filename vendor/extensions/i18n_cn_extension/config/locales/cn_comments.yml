@@ -1,0 +1,26 @@
+cn:
+  actions: 操作
+  allow_comments_on_page: 允许本页留言?
+  author: 留言人
+  approve_comment: 审核留言
+  are_you_sure_you_want_to_delete_this_comment: 您确定要删除该留言吗?
+  click_to_toggle: 点击查看全文
+  currently_x_view_comments: 当前 {{count}} - 查看处理情况
+  comment: 留言
+  comments: 留言
+  comment_form: 留言表单
+  comment_states:
+    all: 全部
+    unapproved: 已拒绝
+    approved: 已审核
+  date_string: 日期
+  delete_comment: 删除留言
+  delete_unapproved: 删除所有未审核留言
+  download_csv: 导出为EXCEL
+  edit_comment: 编辑留言
+  edit_comment_on: 编辑留言信息
+  email: E-mail
+  message_unsure: Please type the letters that you see to prove that you are not a spambot
+  unapprove_comment: 审批未通过的留言
+  url: 网址
+  your_name: 姓名

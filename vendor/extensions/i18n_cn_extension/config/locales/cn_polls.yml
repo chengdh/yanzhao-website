@@ -1,0 +1,25 @@
+---
+cn:
+  polls_action:
+    edit: '修改投票设置'
+    new: '新增投票设置'
+  polls_form:
+    label:
+      title: '标题'
+      start_date: '开始日期'
+      options: '选项'
+      add_option: '添加投票选项'
+  polls_index:
+    title: '投票设置列表'
+    instructions: 'Click on a poll name below to edit it, or click <code>Remove</code> to delete it. If a poll has responses, click the responses value to toggle the view of the results. Poll responses can be cleared by clicking <code>Clear responses</code>.'
+    column:
+      title: '标题'
+      start_date: '开始日期'
+      responses: '投票人数'
+    empty: '你还未设置任何投票信息. 点击 <code>新建投票设置</code> 录入.'
+    reset: '清空投票信息'
+    reset_confirm: '您确认要清空投票信息吗?'
+    delete_confirm: '您确认要删除该投票设置吗?'
+    results: '结果'
+  polls_controller:
+    responses_cleared: ' "{{poll}}"的投票信息已被清空.'
